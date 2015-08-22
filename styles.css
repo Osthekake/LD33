@@ -1,7 +1,9 @@
+body{
+	background: black;
+}
 .center {
     margin: auto;
     width: 60%;
-    border:3px solid #8AC007;
     padding: 10px;
 }
 
@@ -11,4 +13,13 @@
 	padding: 5px;
 	position:fixed;
 	bottom:10%;
+}
+
+.bigShiny {
+	background: darkred;
+	color: crimson;
+	font-size:25px;
+	border-radius: 5px;
+	padding: 25px;
+	text-align: center;
 }

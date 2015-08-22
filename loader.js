@@ -15,6 +15,7 @@ function render(){
 	var renderObject = scr.application(scr);
 	//transitions here.
 	Level.stage.html(renderObject.html);
+	Level.stage.addClass("bigshiny");
 }
 
 function inform(line){
