@@ -21,7 +21,7 @@ body{
 	float: right;
 }
 
-.choice a{
+#stage a{
 	text-decoration: none;
 }
 
@@ -29,15 +29,31 @@ body{
 	display: inline;
 	background: #FFF8DC;
 	color: #B0C4DE;
-	border-radius: 5px;
+	border-radius: 40px;
 	padding: 5px;
 	margin: 15px;
 	-webkit-transition: padding 1s, margin 1s, -webkit-transform 1s;
     transition: padding 1s, margin 1s, transform 1s;
 }
 
-li.choice:hover{
+.unhover{
 	display: inline;
+	background: #FFF8DC;
+	color: #B0C4DE;
+	border-radius: 40px;
+	padding: 5px;
+	margin: 15px;
+	-webkit-transition: padding 1s, margin 1s, -webkit-transform 1s;
+    transition: padding 1s, margin 1s, transform 1s;
+}
+
+.hover{
+	display: inline;
+	padding: 15px;
+	margin: 5px;
+}
+
+li.choice:hover{
 	padding: 15px;
 	margin: 5px;
 }
@@ -51,13 +67,13 @@ li.choice:hover{
 }
 
 .bigShiny {
-	background-color: rgb(200, 255, 255);
+	background-color: darkgrey;
 	color: crimson;
 	font-size:25px;
 	border-radius: 50px;
 	padding: 25px;
 	text-align: center;
-	height: 200px;
+	margin: 20px;
 }
 
 .bigShiny div{
@@ -72,13 +88,10 @@ li.choice:hover{
     transition: opacity 1s, transform 1s;
 }
 
-#blocker{
-	position:absolute;
-	top:0;
-	left:0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(255, 255, 255, 0);
-	-webkit-transition: background-color 1s, -webkit-transform 1s;
-    transition: background-color 1s, transform 1s;
+.upper{
+	top:15%;
+}
+
+.lower{
+	bottom:15%;
 }

@@ -1,21 +1,13 @@
 var Level = {};
 
-Level.setStage = function(stageObject){
-	Level.stage = stageObject;
-};
 
 Level.currentScene = undefined;
 
 Level.sceneIndex = 0;
 
-Level.stage = undefined;
-
 function render(){
 	var scr = Level.currentScene[Level.sceneIndex];
-	var renderObject = scr.application(scr);
-	//transitions here.
-	Level.stage.html(renderObject.html);
-	Level.stage.addClass("bigshiny");
+	scr.application(scr);
 }
 
 function inform(line){
@@ -28,7 +20,7 @@ function loadScene(sceneName){
 		inform("loading " + sceneName + "...");
 		console.log("loading " + sceneName + "...");
 		Level.sceneIndex = 0;
-		render();
+		Scene.fadeOutThenIn(render);
 	}else{
 		inform("no such scene: " + sceneName);	
 		console.log("no such scene: " + sceneName);
@@ -37,5 +29,5 @@ function loadScene(sceneName){
 
 function next(){
 	Level.sceneIndex += 1;
-	render();
+	Scene.fadeOutThenIn(render);
 }

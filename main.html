@@ -5,16 +5,16 @@
         <title>Ludum Dare 33</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="scene.js"></script>
         <script type="text/javascript" src="timer.js"></script>
         <script type="text/javascript" src="levels.js"></script>
         <script type="text/javascript" src="loader.js"></script>
     </head>
     <body>
-    	<div class="center fadeable">
-    		<div id="stage"></div>
+    	<div id="stage" class="center fadeable">
+    		<div ></div>
 	    </div>
 	    <script>
-	    	Level.setStage($("#stage"));
 	    	loadScene("intro");
 	    	var Timer = new Timer(30);
 	    	Timer.requestUpdates(function(timer){
@@ -40,7 +40,7 @@
 				Timer.requestUpdates(function(timer){
 		    		$("#timer").text(timer.time);
 		    	});
-		    	Timer.start();
+		    	//Timer.start();
 			</script>
 		</div>
     </body>

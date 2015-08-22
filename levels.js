@@ -2,20 +2,56 @@
 var loadingFunctions = {
 	text: function(textObject){ // use this to display text
 		console.log("loading textObject " + textObject);
-		var rendered = "<div>" + textObject.text + "</div>" +
-				  		"<a class='next' href='#' onClick=next()></a>";
-		return {
-			html: rendered
+		$("#stage").html(
+			"<div class='bigShiny'> " + 
+			textObject.text + 
+			"<a class='next' href='#' onClick=next()></a></div>"
+		);
+		//$("#stage").addClass("bigShiny");
+	},
+	coupled_choices: function(choicesObject){
+		$("#stage").html(
+		 	"<div class='bigShiny upper'><ul>" + 
+			$.map(choicesObject.choices, function(choice, index){
+					return "<li class='unhover hoverlink"+index+"'><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.upper + "</a></li>";
+			}).join("") +
+			"</ul></div>"+
+		 	"<div class='bigShiny lower'><ul>" + 
+			$.map(choicesObject.choices, function(choice, index){
+					return "<li class='unhover hoverlink"+index+"'><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.lower + "</a></li>";
+			}).join("") +
+			"</ul></div>"
+		);
+
+		var hover = function(cls){
+			return function(){
+				console.log("hovering...  " + cls);
+				$(cls).addClass("hover"); 
+			};
 		};
+		var unhover = function(cls){
+			return function(){
+				console.log("unhovering")
+				$(cls).removeClass("hover");
+			};
+		};
+		for (var i = choicesObject.choices.length - 1; i >= 0; i--) {
+			var cls = ".hoverlink"+(i);
+			console.log("adding hover link to " + cls);
+			$(cls).hover(hover(cls), unhover(cls));
+		};
+		
+		//$("#stage").addClass("bigShiny");	
 	},
 	choices: function(choicesObject){ // use this to display choices
-		return {
-			html: "<div> <ul>" + 
-				$.map(choicesObject.choices, function(choice){
+		$("#stage").html(
+		 	"<div class='bigShiny'><ul>" + 
+			$.map(choicesObject.choices, function(choice){
 					return "<li class='choice'><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.text + "</a></li>";
-				}).join("") +
-				"</ul></div>"
-		};
+			}).join("") +
+			"</ul></div>"
+		);
+		//$("#stage").addClass("");
 	},
 	sound: function(soundObject){ // use this to play a sound, or to change which sound is playing, or stop it?
 		alert("sound is not implemented");
@@ -27,6 +63,23 @@ var loadingFunctions = {
 
 // Actual data. This is where lots and lots of stuff goes.
 var sceneData = {};
+
+sceneData["couple_test"] = [
+	{
+		application: loadingFunctions.coupled_choices,	
+		choices: [
+			{
+			  	upper: "It was my safe place.",
+			  	lower: "Cupboards are tastyy...",
+			  	goal: "cupboard_safe"
+		  	}, {
+			  	upper: "It was my secret place.",
+			  	lower: "I like to hide and watch!",
+			  	goal: "cupboard_secret"
+		  	}
+		]
+	}
+];
 
 sceneData["intro"] = [ // a scene is denominated by a key string. This scene has the key "intro".
 	// A scene is a list of scene objects, which have a 'application' function and some data.
