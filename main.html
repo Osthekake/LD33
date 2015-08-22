@@ -18,8 +18,13 @@
 	    </script>
 	    <div id="debug">
 	    	<h3 size="15">Debug corner <span style="color:red;">&hearts;</span></h3>
-	    	Go to scene name: <input id="goto" type="text"/>
-	    	<span id="errors"></span>
+	    	<div id="scenechanger">
+	    		Go to scene name: <input id="goto" type="text"/>
+	    		<span id="errors"></span>
+    		</div>
+    		<div>
+    			Timer: <span id="timer"></span>
+    		</div>
 	    	<script>
 	    		$("#goto").on("keydown", function load(e) {
 				    if(e.keyCode == 13) {
