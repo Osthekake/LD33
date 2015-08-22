@@ -3,7 +3,7 @@
 ## Add tasks, times, requirements etc as we work them out. Project management, y'all. We need some.
 
 * Decide on a desired user experience. **difficult** *blocker*
-  - What should appear on screen. *blocker*
+  - ~~What should appear on screen. *blocker*~~
   - What should a user do to advance the game. *blocker*
     - Not actually necessarily important for first simple implementation.
   - What should cause pictures to appear? Sounds to play? 
@@ -26,8 +26,8 @@
   - Set aside time for polish, testing, rearranging, rewriting.
   - Polish, polish, polish.
 * Game shell. *blocker*
-  - Decide on technology. (JS/HTML?)
-  - Make simplest usable implementation. No fancy graphics or effects, just make something playable that story can be implemented in. <span class="medium">*blocker*</span>
+  - ~~Decide on technology. (JS/HTML?)~~
+  - ~~Make simplest usable implementation. No fancy graphics or effects, just make something playable that story can be implemented in. <span class="medium">*blocker*</span>~~
   - Then make win/loss condition. *important*
   - Make stuff to show pictures.
   - Make stuff to play sounds.
