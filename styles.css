@@ -4,3 +4,11 @@
     border:3px solid #8AC007;
     padding: 10px;
 }
+
+#debug {
+	background: mediumseagreen;
+	border-radius: 5px;
+	padding: 5px;
+	position:fixed;
+	bottom:10%;
+}

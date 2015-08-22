@@ -17,10 +17,21 @@ function render(){
 	Level.stage.html(renderObject.html);
 }
 
-function load(sceneName){
+function inform(line){
+	$("#errors").text(line);	
+}
+
+function loadScene(sceneName){
 	Level.currentScene = sceneData[sceneName];
-	Level.sceneIndex = 0;
-	render();
+	if(Level.currentScene){
+		inform("loading " + sceneName + "...");
+		console.log("loading " + sceneName + "...");
+		Level.sceneIndex = 0;
+		render();
+	}else{
+		inform("no such scene: " + sceneName);	
+		console.log("no such scene: " + sceneName);
+	}
 }
 
 function next(){

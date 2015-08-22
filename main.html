@@ -9,12 +9,23 @@
         <script type="text/javascript" src="loader.js"></script>
     </head>
     <body >
-    	<div id="stage" style="border: 1px;" class="center">
-    		
+    	<div style="border: 1px;" class="center">
+    		<div id="stage"></div>
 	    </div>
 	    <script>
 	    	Level.setStage($("#stage"));
-	    	load("intro");
+	    	loadScene("intro");
 	    </script>
+	    <div id="debug">
+	    	Go to scene name: <input id="goto" type="text"/>
+	    	<span id="errors"></span>
+	    	<script>
+	    		$("#goto").on("keydown", function load(e) {
+				    if(e.keyCode == 13) {
+				        loadScene($(this).val());
+				    }
+				});
+			</script>
+		</div>
     </body>
 </html>
