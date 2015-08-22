@@ -3,7 +3,7 @@ var loadingFunctions = {
 	text: function(textObject){ // use this to display text
 		console.log("loading textObject " + textObject);
 		var rendered = "<div>" + textObject.text + "</div>" +
-				  		"<a href='#' onClick=next()>next</a>";
+				  		"<a class='next' href='#' onClick=next()></a>";
 		return {
 			html: rendered
 		};
@@ -12,7 +12,7 @@ var loadingFunctions = {
 		return {
 			html: "<div> <ul>" + 
 				$.map(choicesObject.choices, function(choice){
-					return "<li><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.text + "</a></li>";
+					return "<li class='choice'><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.text + "</a></li>";
 				}).join("") +
 				"</ul></div>"
 		};

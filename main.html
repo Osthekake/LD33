@@ -5,16 +5,22 @@
         <title>Ludum Dare 33</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
         <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="timer.js"></script>
         <script type="text/javascript" src="levels.js"></script>
         <script type="text/javascript" src="loader.js"></script>
     </head>
-    <body >
-    	<div class="center">
+    <body>
+    	<div class="center fadeable">
     		<div id="stage"></div>
 	    </div>
 	    <script>
 	    	Level.setStage($("#stage"));
 	    	loadScene("intro");
+	    	var Timer = new Timer(30);
+	    	Timer.requestUpdates(function(timer){
+	    		$(".fadeable").css({"opacity" : timer.normalized()});
+	    		//console.log($(".fadeable").css("opacity"));
+	    	});
 	    </script>
 	    <div id="debug">
 	    	<h3 size="15">Debug corner <span style="color:red;">&hearts;</span></h3>
@@ -23,7 +29,7 @@
 	    		<span id="errors"></span>
     		</div>
     		<div>
-    			Timer: <span id="timer"></span>
+    			Timer: <span id="timer">Timer not running</span><button onClick="Timer.start(10);">Start timer from 10</button>
     		</div>
 	    	<script>
 	    		$("#goto").on("keydown", function load(e) {
@@ -31,6 +37,10 @@
 				        loadScene($(this).val());
 				    }
 				});
+				Timer.requestUpdates(function(timer){
+		    		$("#timer").text(timer.time);
+		    	});
+		    	Timer.start();
 			</script>
 		</div>
     </body>

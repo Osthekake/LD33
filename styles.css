@@ -1,10 +1,45 @@
 body{
 	background: black;
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/80/Nh-pluto-in-true-color_2x_JPEG.jpg");
 }
 .center {
     margin: auto;
     width: 60%;
     padding: 10px;
+}
+#stage li{
+	list-style: none;
+}
+
+.next {
+	position: relative;
+	bottom:0;
+	top: 70%;
+	width: 50px;
+	height: 50px;
+	background-image: url("images/next.png");
+	float: right;
+}
+
+.choice a{
+	text-decoration: none;
+}
+
+.choice{
+	display: inline;
+	background: #FFF8DC;
+	color: #B0C4DE;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 15px;
+	-webkit-transition: padding 1s, margin 1s, -webkit-transform 1s;
+    transition: padding 1s, margin 1s, transform 1s;
+}
+
+li.choice:hover{
+	display: inline;
+	padding: 15px;
+	margin: 5px;
 }
 
 #debug {
@@ -12,14 +47,38 @@ body{
 	border-radius: 5px;
 	padding: 5px;
 	position:fixed;
-	bottom:10%;
+	bottom:0%;
 }
 
 .bigShiny {
-	background: darkred;
+	background-color: rgb(200, 255, 255);
 	color: crimson;
 	font-size:25px;
-	border-radius: 5px;
+	border-radius: 50px;
 	padding: 25px;
 	text-align: center;
+	height: 200px;
+}
+
+.bigShiny div{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);	
+}
+
+.fadeable{
+	opacity: 1;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+    transition: opacity 1s, transform 1s;
+}
+
+#blocker{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0);
+	-webkit-transition: background-color 1s, -webkit-transform 1s;
+    transition: background-color 1s, transform 1s;
 }
