@@ -12,7 +12,7 @@ var loadingFunctions = {
 		return {
 			html: "<div> <ul>" + 
 				$.map(choicesObject.choices, function(choice){
-					return "<li><a href='#' onClick=load('" + choice.goal + "') >" + choice.text + "</a></li>";
+					return "<li><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.text + "</a></li>";
 				}).join("") +
 				"</ul></div>"
 		};
