@@ -1,6 +1,5 @@
 var Level = {};
 
-
 Level.currentScene = undefined;
 
 Level.sceneIndex = 0;
@@ -25,6 +24,12 @@ function loadScene(sceneName){
 		inform("no such scene: " + sceneName);	
 		console.log("no such scene: " + sceneName);
 	}
+}
+
+Level.renderPicture = function(path){
+	Level.sceneIndex += 1;
+	render();
+	Scene.setBackground(path);
 }
 
 function next(){

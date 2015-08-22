@@ -19,3 +19,13 @@ Scene.fadeOutThenIn = function(between){
 	}
 	setTimeout(step, 1000);
 };
+
+Scene.setBackground = function(path){
+	console.log("setting background " + path);
+	$("#image").css({"opacity" : 0.0});
+	setTimeout(function(){
+		$("#image").css({"background-image": "url(images/"+path+")"});
+		$("#image").css({"opacity" : 1.0});
+	}, 1000);
+	
+};

@@ -11,12 +11,12 @@ var loadingFunctions = {
 	},
 	coupled_choices: function(choicesObject){
 		$("#stage").html(
-		 	"<div class='bigShiny upper'><ul>" + 
+		 	"<div class='upper'><ul>" + 
 			$.map(choicesObject.choices, function(choice, index){
 					return "<li class='unhover hoverlink"+index+"'><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.upper + "</a></li>";
 			}).join("") +
 			"</ul></div>"+
-		 	"<div class='bigShiny lower'><ul>" + 
+		 	"<div class='lower'><ul>" + 
 			$.map(choicesObject.choices, function(choice, index){
 					return "<li class='unhover hoverlink"+index+"'><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.lower + "</a></li>";
 			}).join("") +
@@ -25,19 +25,19 @@ var loadingFunctions = {
 
 		var hover = function(cls){
 			return function(){
-				console.log("hovering...  " + cls);
+//				console.log("hovering...  " + cls);
 				$(cls).addClass("hover"); 
 			};
 		};
 		var unhover = function(cls){
 			return function(){
-				console.log("unhovering")
+//				console.log("unhovering")
 				$(cls).removeClass("hover");
 			};
 		};
 		for (var i = choicesObject.choices.length - 1; i >= 0; i--) {
 			var cls = ".hoverlink"+(i);
-			console.log("adding hover link to " + cls);
+			//console.log("adding hover link to " + cls);
 			$(cls).hover(hover(cls), unhover(cls));
 		};
 		
@@ -45,7 +45,7 @@ var loadingFunctions = {
 	},
 	choices: function(choicesObject){ // use this to display choices
 		$("#stage").html(
-		 	"<div class='bigShiny'><ul>" + 
+		 	"<div><ul>" + 
 			$.map(choicesObject.choices, function(choice){
 					return "<li class='choice'><a href='#' onClick=loadScene('" + choice.goal + "') >" + choice.text + "</a></li>";
 			}).join("") +
@@ -57,7 +57,7 @@ var loadingFunctions = {
 		alert("sound is not implemented");
 	},
 	picture: function(pictureObject){ // use this to display a picture or change which picture is being displayed
-		alert("pictures are not implemented");
+		Level.renderPicture(pictureObject.path);
 	}
 };
 
@@ -89,6 +89,9 @@ sceneData["intro"] = [ // a scene is denominated by a key string. This scene has
 		// when the function 'text' is used, this is the expected data format:
 		text: "There was a cupboard under the stairs." // a single string called 'text'. Only this string will be displayed.
 		// possibly there will be more (optional) data here in the future: Font, transition, style
+	},{
+		application: loadingFunctions.picture, // This will alter the background picture.
+		path: "next.png" 
 	},{
 		application: loadingFunctions.text,
 		text: "I hid there as a child." // Keep in mind that this line might become large on screen.
@@ -140,3 +143,5 @@ sceneData["cupboard_secret"] = [ // this is the scene other referred to above.
 		] 
 	}
 ];
+
+// the exam goes here:
