@@ -1,8 +1,7 @@
 sceneData["accident1"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "I was nearest to the gas extraction platform when the alarm went off, and I was the first on the scene. A leakage in the gas transferral system. If I couldn't stop the leak quickly, it would grow to a full rupture, and we would lose the tanks and maybe the whole spoke-arm of the orbital station.
-" 
+		text: "I was nearest to the gas extraction platform when the alarm went off, and I was the first on the scene. A leakage in the gas transferral system. If I couldn't stop the leak quickly, it would grow to a full rupture, and we would lose the tanks and maybe the whole spoke-arm of the orbital station." 
 	},{
 		application: loadingFunctions.picture,
 		path: "next.png" 
@@ -39,7 +38,7 @@ sceneData["accident1_outro"] = [
 		choices: [ 
 		  {
 			text: "There was a flash in my vision like a firework as I passed out.",
-		  	goal: "birthday1" 
+		  	goal: "Birthday1" 
 		  }
 		] 
 	}
