@@ -97,14 +97,14 @@ sceneData["intro"] = [ // a scene is denominated by a key string. This scene has
 	{
 		application: loadingFunctions.text,
 		// when the function 'text' is used, this is the expected data format:
-		text: "There was a cupboard under the stairs." // a single string called 'text'. Only this string will be displayed.
+		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby. It's quieter than the sound of my own breathing.." // a single string called 'text'. Only this string will be displayed.
 		// possibly there will be more (optional) data here in the future: Font, transition, style
 	},{
 		application: loadingFunctions.picture, // This will alter the background picture.
 		path: "next.png" 
 	},{
 		application: loadingFunctions.text,
-		text: "I hid there as a child." // Keep in mind that this line might become large on screen.
+		text: "Try to work out what’s going on." // Keep in mind that this line might become large on screen.
 	},{
 		application: loadingFunctions.choices,
 		//when the function 'choices' is used, this is the expected data format:
