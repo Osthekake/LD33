@@ -1,13 +1,10 @@
 sceneData["Birthday1"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "I remember that there was a bang then a flash." 
+		text: "I had fireworks for my 11th birthday." 
 	},{
 		application: loadingFunctions.picture,
 		path: "next.png" 
-	},{
-		application: loadingFunctions.text,
-		text: "I had fireworks for my 11th birthday once."
 	},{
 		application: loadingFunctions.text,
 		text:"The cats were so scared and I was so happy."
