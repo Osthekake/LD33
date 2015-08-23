@@ -13,16 +13,13 @@ function inform(line){
 	$("#errors").text(line);	
 }
 
-function loadScene(sceneName, shouldSkip){
+function loadScene(sceneName){
 	Level.currentScene = sceneData[sceneName];
 	if(Level.currentScene){
 		inform("loading " + sceneName + "...");
 		console.log("loading " + sceneName + "...");
 		Level.sceneIndex = 0;
-		if(shouldSkip)
-			render();
-		else
-			Scene.fadeOutThenIn(render);
+		Scene.fadeOutThenIn(render);
 	}else{
 		inform("no such scene: " + sceneName);	
 		console.log("no such scene: " + sceneName);
@@ -35,10 +32,7 @@ Level.renderPicture = function(path){
 	Scene.setBackground(path);
 }
 
-function next(shouldSkipFade){
+function next(){
 	Level.sceneIndex += 1;
-	if(shouldSkipFade)
-		render();
-	else
-		Scene.fadeOutThenIn(render);
+	Scene.fadeOutThenIn(render);
 }

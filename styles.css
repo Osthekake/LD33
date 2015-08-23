@@ -42,18 +42,12 @@ body{
 
 .unhover{
 	display: inline-block;
-	background: #FFF8DC;
 	color: #B0C4DE;
 	border-radius: 40px;
 	padding: 5px;
 	margin: 15px;
-	-webkit-transition: padding 1s, margin 1s, -webkit-transform 1s;
-    transition: padding 1s, margin 1s, transform 1s;
-}
-
-.hover{
-	padding: 15px;
-	margin: 5px;
+	-webkit-transition: background 3s, padding 1s, margin 1s, -webkit-transform 1s;
+    transition: background 3s, padding 1s, margin 1s, transform 1s;
 }
 
 li.choice:hover{
@@ -93,7 +87,21 @@ li.choice:hover{
 	top:5%;
 }
 
+.upper li{
+	background: #FFF8DC;
+}
+
 .lower{
 	position:absolute;
 	bottom:5%;
+}
+
+.lower li{
+	background: #990033;
+}
+
+li.hover{
+	padding: 15px;
+	margin: 5px;
+	background: #FF3300;
 }

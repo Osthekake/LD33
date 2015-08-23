@@ -77,9 +77,7 @@ sceneData["exam_1_3"] = [
 		text: "The advances in space travel and the technologies required to bring back resources where the focus."
 	}, {
 		application: loadingFunctions.text,
-		text: "It was all but impossible to get funding unless you could say how your work was relevant to mining the night sky."
-	}, {
-		application: loadingFunctions.next,
+		text: "It was all but impossible to get funding unless you could say how your work was relevant to mining the night sky.",
 		choices: [{goal: "exam_2_1"}]
 	}
 ]; 
@@ -169,11 +167,9 @@ sceneData["exam_2_3"] = [
 		text: "The advances in space travel and the technologies required to bring back resources where the focus."
 	}, {
 		application: loadingFunctions.text,
-		text: "It was all but impossible to get funding unless you could say how your work was relevant to mining the night sky."
-	}, {
-		application: loadingFunctions.next,
+		text: "It was all but impossible to get funding unless you could say how your work was relevant to mining the night sky.",
 		choices:[{goal: "exam_3_1"}]
-	} 
+	}
 ]; 
 
 //more to do..

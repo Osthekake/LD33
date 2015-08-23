@@ -2,8 +2,13 @@
 var loadingFunctions = {
 	text: function(textObject){ // use this to display text
 		//console.log("loading textObject " + textObject);
+		var onclk;
+		if(textObject.choices)
+			onclk = "loadScene('"+textObject.choices[0].goal+"')";
+		else
+			onclk = "next()";
 		$("#stage").html(
-			"<div class='bigShiny' onClick=next()> " + 
+			"<div class='bigShiny' onClick="+onclk+"> " + 
 			textObject.text + 
 			"</div>"
 		);
@@ -65,9 +70,6 @@ var loadingFunctions = {
 	},
 	picture: function(pictureObject){ // use this to display a picture or change which picture is being displayed
 		Level.renderPicture(pictureObject.path);
-	},
-	next: function(crap){
-		loadScene(crap.choices.goal, false);
 	}
 };
 
