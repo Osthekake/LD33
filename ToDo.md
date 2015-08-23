@@ -6,7 +6,7 @@
   - ~~What should appear on screen. *blocker*~~
   - ~~What should a user do to advance the game. *blocker*~~
     - ~~Not actually necessarily important for first simple implementation.~~
-  - ~~What should cause pictures to appear? Sounds to play? ~~
+  - ~~What should cause pictures to appear? Sounds to play?~~
     - ~~Not actually necessarily important for first simple implementation.~~
   - ~~Resolve on-going discussion re countdown and/or points. **difficult**~~
     - ~~Not actually necessarily important for first simple implementation.~~
