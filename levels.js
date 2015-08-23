@@ -1,13 +1,20 @@
 // Functions for loading data. Probably don't need to care about this.
 var loadingFunctions = {
 	text: function(textObject){ // use this to display text
-		console.log("loading textObject " + textObject);
+		//console.log("loading textObject " + textObject);
 		$("#stage").html(
-			"<div class='bigShiny'> " + 
+			"<div class='bigShiny' onClick=next()> " + 
 			textObject.text + 
-			"<a class='next' href='#' onClick=next()></a></div>"
+			"</div>"
 		);
 		//$("#stage").addClass("bigShiny");
+	},
+	titleScreen: function(titleCard){
+		$("#stage").html(
+			"<div class='bigShiny' onClick=next()><h1>" + 
+			titleCard.text + 
+			"</h1></div>"
+		);
 	},
 	coupled_choices: function(choicesObject){
 		$("#stage").html(
@@ -58,6 +65,9 @@ var loadingFunctions = {
 	},
 	picture: function(pictureObject){ // use this to display a picture or change which picture is being displayed
 		Level.renderPicture(pictureObject.path);
+	},
+	next: function(crap){
+		loadScene(crap.choices.goal, false);
 	}
 };
 
@@ -143,5 +153,3 @@ sceneData["cupboard_secret"] = [ // this is the scene other referred to above.
 		] 
 	}
 ];
-
-// the exam goes here:

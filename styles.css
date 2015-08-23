@@ -6,6 +6,8 @@ body{
 	width: 100%;
 	height: 100%;
 	z-index: -1;
+	background-repeat: no-repeat;
+	background-position: center;
 	-webkit-transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, transform 1s;
 	background-image: url("https://upload.wikimedia.org/wikipedia/commons/8/80/Nh-pluto-in-true-color_2x_JPEG.jpg");
@@ -23,22 +25,12 @@ body{
 	list-style: none;
 }
 
-.next {
-	position: relative;
-	bottom:0;
-	top: 70%;
-	width: 50px;
-	height: 50px;
-	background-image: url("images/next.png");
-	float: right;
-}
-
 #stage a{
 	text-decoration: none;
 }
 
 .choice{
-	display: inline;
+	display: inline-block;
 	background: #FFF8DC;
 	color: #B0C4DE;
 	border-radius: 40px;
@@ -49,7 +41,7 @@ body{
 }
 
 .unhover{
-	display: inline;
+	display: inline-block;
 	background: #FFF8DC;
 	color: #B0C4DE;
 	border-radius: 40px;
@@ -60,7 +52,6 @@ body{
 }
 
 .hover{
-	display: inline;
 	padding: 15px;
 	margin: 5px;
 }
@@ -99,10 +90,10 @@ li.choice:hover{
 
 .upper{
 	position:absolute;
-	top:15%;
+	top:5%;
 }
 
 .lower{
 	position:absolute;
-	bottom:15%;
+	bottom:5%;
 }
