@@ -143,11 +143,11 @@ sceneData["exam_2_2"] = [
 			{
 			  	upper: "I studied how the ants’ society worked.",
 			  	lower: "While I was there I read the novelisation of the movie Alien.",
-			  	goal: "exam_2_2"
+			  	goal: "exam_2_1"
 		  	}, {
 			  	upper: "I studied how ants combated invaders.",
 			  	lower: "While I was there I read the novelisation of John Carpenter's The Thing.",
-			  	goal: "exam_2_2"
+			  	goal: "exam_2_1"
 		  	}, {
 			  	upper: "I studied which fungus the ants ate.",
 			  	lower: "The interactions of the uninfected ants and the infected ants was fascinating.",
