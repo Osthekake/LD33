@@ -155,3 +155,58 @@ sceneData["cracked_visor2"] = [ // this is the scene other referred to above.
 		] 
 	}
 ];
+sceneData["Camping1"] = [ 
+	{
+		application: loadingFunctions.text,
+		text: "" 
+	},{
+		application: loadingFunctions.picture,
+		path: "next.png" 
+	},{
+		application: loadingFunctions.text,
+		text: ""
+	},{
+		application: loadingFunctions.choices,
+		choices: [ 
+		  {
+		  	text: "",
+		  	goal: ""
+		  }, {
+		  	text: "",
+		  	goal: ""
+		  }
+		] 
+	}
+];
+
+
+sceneData[""] = [ 
+	{
+		application: loadingFunctions.text,
+		text: ""
+	},{
+		application: loadingFunctions.choices,
+		choices: [ 
+		  {
+		  	text: "",
+		  	goal: ""
+		  }
+		] 
+	}
+];
+
+
+sceneData[""] = [ 
+	{
+		application: loadingFunctions.text,
+		text: ""
+	},{
+		application: loadingFunctions.choices,
+		choices: [ 
+		  {
+		  	text: "",
+		  	goal: "" 
+		  }
+		] 
+	}
+];
