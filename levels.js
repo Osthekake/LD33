@@ -99,25 +99,25 @@ sceneData["intro"] = [ // a scene is denominated by a key string. This scene has
 	{
 		application: loadingFunctions.text,
 		// when the function 'text' is used, this is the expected data format:
-		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby. It's quieter than the sound of my own breathing.." // a single string called 'text'. Only this string will be displayed.
+		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby." // a single string called 'text'. Only this string will be displayed.
 		// possibly there will be more (optional) data here in the future: Font, transition, style
 	},{
 		application: loadingFunctions.picture, // This will alter the background picture.
 		path: "next.png" 
 	},{
 		application: loadingFunctions.text,
-		text: "Try to work out what’s going on." // Keep in mind that this line might become large on screen.
+		text: "It's quieter than the sound of my own breathing." // Keep in mind that this line might become large on screen.
 	},{
 		application: loadingFunctions.choices,
 		//when the function 'choices' is used, this is the expected data format:
 		choices: [ // a single list named 'choices'...
 		  {
-		  	text: "It was my safe place.",
-		  	goal: "cupboard_safe" //name of the scene to transition to
+		  	text: "Try to work out what’s going on",
+		  	goal: "cracked_visor1" //name of the scene to transition to
 		  	// maybe a kind of transition would go here.
 		  }, {
-		  	text: "It was my secret place.",
-		  	goal: "cupboard_secret"
+		  	text: "Watch the rings of Saturn drift by",
+		  	goal: "cracked_visor2"
 		  }
 		] // All of the choices will be rendered on screen at once
 	}
@@ -125,32 +125,32 @@ sceneData["intro"] = [ // a scene is denominated by a key string. This scene has
 ];
 
 //these could theoretically go into different files, if we want to split it up into levels or something.
-sceneData["cupboard_safe"] = [ // this is the scene referred to above.
+sceneData["cracked_visor1"] = [ // this is the scene referred to above.
 	{
 		application: loadingFunctions.text,
-		text: "I needed safety from my dangerous surroundings."
+		text: "There's a thin line across my visor. My suit's leaking!"
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-		  	text: "What was it again about the cupboard?",
-		  	goal: "intro"
+		  	text: "Look for some sealant in pockets",
+		  	goal: "Camping1"
 		  }
 		] // This list can be of any non-zero length. Here there is only one choice.
 	}
 ];
 
 
-sceneData["cupboard_secret"] = [ // this is the scene other referred to above.
+sceneData["cracked_visor2"] = [ // this is the scene other referred to above.
 	{
 		application: loadingFunctions.text,
-		text: "I was doing bad things in secret."
+		text: "The rings are beautiful but something's spoiling the view."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-		  	text: "No actually I was just hiding.",
-		  	goal: "cupboard_safe" // Choices can lead to any scene. Loops and shortcuts are possible. I recommend maybe drawing a chart?
+		  	text: "Look more closely",
+		  	goal: "cracked_visor1" // Choices can lead to any scene. Loops and shortcuts are possible. I recommend maybe drawing a chart?
 		  }
 		] 
 	}
