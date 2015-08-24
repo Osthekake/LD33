@@ -209,9 +209,11 @@ sceneData["exam_3_3"] = [
 		application: loadingFunctions.text,
 		text: "After an extremophile species of the fungus was found on several of the moons and asteroids orbiting Saturn the company recruited me to perform a risk assessment to see how dangerous the fungus was. "
 	}, {
-		application: loadingFunctions.text,
+		application: loadingFunctions.choices,
+		choices: [
 		text: "I discovered the fungus was safe, but there was something else there."
 		goal: "writing2"
 	}
+	]
 ];
 //more to do..
