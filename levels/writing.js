@@ -180,7 +180,7 @@ sceneData["writing_2_6"] = [
 	} 
 ];
 
-sceneData["writing_2_2"] = [
+sceneData["writing_2_6"] = [
 	{
 		application: loadingFunctions.text,
 		text: "Yes, I talked to Blackwood, explained there was something else here, something loose on the station, they should all get to safety.",
@@ -190,7 +190,7 @@ sceneData["writing_2_2"] = [
 ];
 
 
-sceneData["writing_2_3"] = [
+sceneData["writing_2_7"] = [
 	{
 		application: loadingFunctions.text,
 		text: "There was something or someone in the control room. That thing wrote the warnings. ",
