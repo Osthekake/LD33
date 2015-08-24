@@ -15,7 +15,6 @@ sceneData["helmet2"] = [
 		  	text: "Look for some sealant in pockets",
 		  	goal: "helmet2_outro"
 		  }
-		  }
 		] 
 	}
 ];
@@ -50,19 +49,18 @@ sceneData["helmet3"] = [
 		  	text: "Look for some sealant in pockets",
 		  	goal: "helmet3_outro"
 		  }
-		  }
 		] 
 	}
 ];
 
 
-sceneData["helmet2_outro"] = [ 
+sceneData["helmet3_outro"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "There are other items I can see floating. Something must of gone wrong with the airlocks",
-		  	goal: "Camping3 
+		  	goal: "Camping3"
 		  }
 		] 
 	}
