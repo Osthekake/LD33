@@ -4,7 +4,7 @@ sceneData["Birthday1"] = [
 		text: "I had fireworks for my 11th birthday." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "fireworks.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text:"The cats were so scared and I was so happy."

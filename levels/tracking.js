@@ -4,7 +4,7 @@ sceneData["tracking1"] = [
 		text: "I first spotted the anomaly in the station reports for air quality." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "tracking.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text:"The sensors kept reporting an unidentified pollutant."

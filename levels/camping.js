@@ -4,7 +4,7 @@ sceneData["Camping1"] = [
 		text: "The feeling of being encased in the fabric of my spacesuit reminds me of going camping for the first time with my friends." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "camping.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "It rained the first night and I huddled in my tent listening to the patter of rain on canvas."
