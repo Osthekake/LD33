@@ -114,7 +114,10 @@ sceneData["credits"] = [
 sceneData["menu"] = [
 	{
 		application: loadingFunctions.titleScreen,
-		text: "Welcome to our game"
+		text: "Life Review"
+	},{
+		application: loadingFunctions.titleScreen,
+		text: "(aka: Bob)"
 	},
 	{
 		application: loadingFunctions.choices,
