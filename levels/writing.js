@@ -67,7 +67,7 @@ sceneData["writing1_3"] = [
 		choices: [ 
 		  {
 			text: "There were more markings, inside my locker and across the floor of science laboratory. Despite all this, Blackwood of all people kept on leaving messages about graffiti. Does he think I care about graffiti?",
-		  	goal: "toys2" 
+		  	goal: "toys_2" 
 		  }
 		] 
 	}
@@ -162,7 +162,7 @@ sceneData["writing2_5"] = [
 	{
 		application: loadingFunctions.text,
 		text: "The insects wouldn’t understand. Each doing their own thing, never understanding the whole.",
-		choices: [{goal : "toys3"}]
+		choices: [{goal : "toys_3"}]
 	} 
 ];
 
