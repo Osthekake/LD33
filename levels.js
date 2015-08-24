@@ -96,10 +96,29 @@ sceneData["couple_test"] = [
 	}
 ];
 
+sceneData["menu"] = [
+	{
+		application: loadingFunctions.titleScreen,
+		text: "Welcome to our game."
+	},
+	{
+		application: loadingFunctions.choices,
+		choices: [
+		  {
+		  	text: "Start game",
+		  	goal: "intro"
+		  }
+		]
+	}
+];
+
 sceneData["intro"] = [ // a scene is denominated by a key string. This scene has the key "intro".
 	// A scene is a list of scene objects, which have a 'application' function and some data.
 	// The game will display them in order.
 	{
+		application: loadingFunctions.picture,
+		path: "saturn_colour.jpg" 
+	},{
 		application: loadingFunctions.text,
 		// when the function 'text' is used, this is the expected data format:
 		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby." // a single string called 'text'. Only this string will be displayed.

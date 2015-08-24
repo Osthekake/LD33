@@ -4,7 +4,7 @@ sceneData["helmet2"] = [
 		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby. It's quieter than the sound of my own breathing." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "saturn_colour.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "I notice a thin line across my visor. My suit's leaking!"
@@ -18,7 +18,6 @@ sceneData["helmet2"] = [
 		] 
 	}
 ];
-
 
 sceneData["helmet2_outro"] = [ 
 	{
@@ -38,7 +37,7 @@ sceneData["helmet3"] = [
 		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby. It's quieter than the sound of my own breathing." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "saturn_colour.jpg"
 	},{
 		application: loadingFunctions.text,
 		text: "I notice a thin line across my visor. My suit's leaking!"
@@ -52,7 +51,6 @@ sceneData["helmet3"] = [
 		] 
 	}
 ];
-
 
 sceneData["helmet3_outro"] = [ 
 	{

@@ -114,8 +114,7 @@ sceneData["writing_2_1"] = [
 	{
 		application: loadingFunctions.text,
 		text: "It was a warning, the miners, they shouldn’t be here. Something had been awoken.",
-		goal : "writing_2",
-		choices: [{goal : "writing2"}]
+		choices: [{goal : "writing_2"}]
 	} 
 ];
 
@@ -123,7 +122,6 @@ sceneData["writing_2_2"] = [
 	{
 		application: loadingFunctions.text,
 		text: "No, it can’t be. The writing was familiar. My hand was shaking because it was fighting, struggling not to write those words.",
-		goal : "writing_2_4",
 		choices: [{goal : "writing_2_4"}]
 	} 
 ];
@@ -132,7 +130,6 @@ sceneData["writing_2_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "I don’t remember. I remember running, I don’t know if I was fleeing or chasing. ",
-		goal : "writing_2"
 		choices: [{goal : "writing_2"}]
 	} 
 ];

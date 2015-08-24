@@ -11,7 +11,7 @@ body{
 	background-size: cover;
 	-webkit-transition: opacity 1s, -webkit-transform 1s;
     transition: opacity 1s, transform 1s;
-	background-image: url("images/saturn_colour.jpg");
+	background-image: url("images/launch.jpg");
 }
 
 #visor{
@@ -54,6 +54,7 @@ body{
 	display: inline-block;
 	background: #FFF8DC;
 	color: #B0C4DE;
+	cursor: pointer;
 	border-radius: 40px;
 	padding: 5px;
 	margin: 15px;
@@ -85,6 +86,7 @@ li.choice:hover{
 }
 
 .bigShiny {
+	cursor: pointer;
 	background-color: darkgrey;
 	border-radius: 50px;
 	padding: 25px;
