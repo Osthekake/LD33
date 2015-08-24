@@ -124,7 +124,7 @@ sceneData["accident2_out"] = [
 		choices: [ 
 		  {
 			text: "There was a flash in my vision like a firework as I passed out.",
-		  	goal: "Birthday2" 
+		  	goal: "Birthday_2" 
 		  }
 		] 
 	}
@@ -136,7 +136,7 @@ sceneData["accident3"] = [
 		text: "I was nearest to the gas extraction platform when the alarm went off, and I was the first on the scene. A leakage in the gas transferral system. If I couldn't stop the leak quickly, it would grow to a full rupture, and we would lose the tanks and maybe the whole spoke-arm of the orbital station." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "spaceship_interior.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "I was nearest to the gas extraction platform when the alarm went off, and I was the first on the scene. A leakage in the gas transferral system. If I couldn't stop the leak quickly, it would grow to a full rupture, and we would lose the tanks and maybe the whole spoke-arm of the orbital station."
@@ -174,7 +174,7 @@ sceneData["accident3_1"] = [
 ];
 
 
-sceneData["accident2_2"] = [ 
+sceneData["accident3_2"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -198,7 +198,7 @@ sceneData["accident3_3"] = [
 	}
 ];
 
-sceneData["accident2_out"] = [ 
+sceneData["accident3_out"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was driven backwards towards the station, and my magnetic boots saved me from rebounding off through the gaping hole which had been punched out of the outer shell of the platform. Bits of metal and blocks of instantly frozen gas slammed into the walls around me. I saw one of the icebergs heading straight for my helmet before I lost consciousness. The shape and colour of it were very strange, almost like it was reaching towards me."
@@ -207,7 +207,7 @@ sceneData["accident2_out"] = [
 		choices: [ 
 		  {
 			text: "There was a flash in my vision like a firework as I passed out.",
-		  	goal: "Birthday3" 
+		  	goal: "Birthday_3" 
 		  }
 		] 
 	}
