@@ -1,4 +1,4 @@
-sceneData["tracking1"] = [ 
+sceneData["tracking_1"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I first spotted the anomaly in the station reports for air quality." 
@@ -19,20 +19,20 @@ sceneData["tracking1"] = [
 		choices: [ 
 		  {
 		  	text: "I helped set up the prank.",
-		  	goal: "tracking1_outro"
+		  	goal: "tracking_1_outro"
 		  },{
 		  	text: "The prank completely fooled me",
-		  	goal: "tracking1_outro"
+		  	goal: "tracking_1_outro"
 		  },{
 		  	text: "The prank caused an evacuation of the Beauly Campus",
-		  	goal: "tracking1_outro"
+		  	goal: "tracking_1_outro"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["tracking1_outro"] = [ 
+sceneData["tracking_1_outro"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "The entire campus was evacuated for an entire day, the prank even made the national news.  Considering the all the panic about the terrorists I’m surprised we got off so lightly."
@@ -48,7 +48,7 @@ sceneData["tracking1_outro"] = [
 ];
 
 
-sceneData["tracking2"] = [ 
+sceneData["tracking_2"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I first spotted the anomaly in the station reports for air quality. The sensors kept reporting an unidentified pollutant. It wasn’t stationary, but it was always very localised" 
@@ -63,20 +63,20 @@ sceneData["tracking2"] = [
 		choices: [ 
 		  {
 		  	text: "I played the part of a victim",
-		  	goal: "tracking2_victim"
+		  	goal: "tracking_2_victim"
 		  },{
 		  	text: "The prank didn't fool anyone.",
-		  	goal: "tracking2_fool"
+		  	goal: "tracking_2_fool"
 		  },{
 		  	text: "The prank caused an evacuation of the Beauly Campus",
-		  	goal: "tracking2_evacuation"
+		  	goal: "tracking_2_evacuation"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["tracking2_victim"] = [ 
+sceneData["tracking_2_victim"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was meant to be a zombie, but I didn’t fool anyone."
@@ -85,7 +85,7 @@ sceneData["tracking2_victim"] = [
 		choices: [ 
 		  {
 			text: "I wait, there was something in the station.",
-		  	goal: "tracking2" 
+		  	goal: "tracking_2" 
 		  }
 		] 
 	}
@@ -100,7 +100,7 @@ sceneData["tracking2_fool"] = [
 		choices: [ 
 		  {
 			text: "The pollutant moved around the building, like it was tracking something.",
-		  	goal: "tracking2" 
+		  	goal: "tracking_2" 
 		  }
 		] 
 	}
@@ -124,7 +124,7 @@ sceneData["tracking2_evacuation"] = [
 	}
 ];
 
-sceneData["tracking3"] = [ 
+sceneData["tracking_3"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I first spotted the anomaly in the station reports for air quality. The sensors kept reporting an unidentified pollutant. It wasn’t stationary, but it was always very localised" 
@@ -139,20 +139,20 @@ sceneData["tracking3"] = [
 		choices: [ 
 		  {
 		  	text: "I played the part of a victim",
-		  	goal: "tracking3_victim"
+		  	goal: "tracking_3_victim"
 		  }, {
 		  	text: "The prank didn't fool anyone.",
-		  	goal: "tracking3_fool"
+		  	goal: "tracking_3_fool"
 		  }, {
 		  	text: "The prank caused an evacuation of the Beauly Campus",
-		  	goal: "tracking3_evacuation"
+		  	goal: "tracking_3_evacuation"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["tracking3_victim"] = [ 
+sceneData["tracking_3_victim"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was meant to be a zombie, but I didn’t fool anyone."
@@ -161,13 +161,13 @@ sceneData["tracking3_victim"] = [
 		choices: [ 
 		  {
 			text: "I wait, there was something in the station.",
-		  	goal: "tracking3" 
+		  	goal: "tracking_3" 
 		  }
 		] 
 	}
 ];
 
-sceneData["tracking3_fool"] = [ 
+sceneData["tracking_3_fool"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I wait, there was something in the station."
@@ -176,13 +176,13 @@ sceneData["tracking3_fool"] = [
 		choices: [ 
 		  {
 			text: "The pollutant moved around the building, like it was tracking something.",
-		  	goal: "tracking3" 
+		  	goal: "tracking_3" 
 		  }
 		] 
 	}
 ];
 
-sceneData["tracking3_evacuation"] = [ 
+sceneData["tracking_3_evacuation"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I wait, there was something in the station."
@@ -194,13 +194,13 @@ sceneData["tracking3_evacuation"] = [
 		choices: [ 
 		  {
 			text: "Maybe there was something I studied which could help explain what is happening.",
-		  	goal: "tracking3_1" 
+		  	goal: "tracking_3_1" 
 		  }
 		] 
 	}
 ];
 
-sceneData["tracking3_1"] = [ 
+sceneData["tracking_3_1"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I could track the gas by the station sensors.  It was moving.  I was finding it hard to focus, my eyes would lose focus. It couldn’t be the gas, it was no where near me." 
@@ -212,19 +212,19 @@ sceneData["tracking3_1"] = [
 		choices: [ 
 		  {
 		  	text: "I led the crew to the loading bay, it was safe there.",
-		  	goal: "tracking3_loading_bay"
+		  	goal: "tracking_3_loading_bay"
 		  },{
 		  	text: "I blacked out, for a while, but the crew managed to get to the loading bay",
-		  	goal: "tracking3_loading_bay"
+		  	goal: "tracking_3_loading_bay"
 		  },{
 		  	text: "The gas wasn’t stalking, it was herding.  I tried to tell the crew, tried so hard to contact Blackwood, tell him of the danger.",
-		  	goal: "tracking3_danger"
+		  	goal: "tracking_3_danger"
 		  }
 		] 
 	}
 ];
 
-sceneData["tracking3_loading_bay"] = [ 
+sceneData["tracking_3_loading_bay"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "There was no safety."
@@ -233,13 +233,13 @@ sceneData["tracking3_loading_bay"] = [
 		choices: [ 
 		  {
 			text: "I needed to get the crew to the loading bay",
-		  	goal: "tracking3_1" 
+		  	goal: "tracking_3_1" 
 		  }
 		] 
 	}
 ];
 
-sceneData["tracking3_danger"] = [ 
+sceneData["tracking_3_danger"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I couldn’t contact the crew. "
