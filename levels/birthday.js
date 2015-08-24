@@ -1,4 +1,4 @@
-sceneData["Birthday1"] = [ 
+sceneData["Birthday_1"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I had fireworks for my 11th birthday." 
@@ -19,20 +19,20 @@ sceneData["Birthday1"] = [
 		choices: [ 
 		  {
 		  	text: "I got the presents I wanted",
-		  	goal: "Birthday1_1"
+		  	goal: "Birthday_1_1"
 		  }, {
 		  	text: "All my friends turned up",
-		  	goal: "Birthday1_2"
+		  	goal: "Birthday_1_2"
 		  }, {
 		  	text: "I got into a fight with my best friend and cried for an hour",
-		  	goal: "Birthday1_3"
+		  	goal: "Birthday_1_3"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["Birthday1_1"] = [ 
+sceneData["Birthday_1_1"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I wanted a science set. My parents had got me an ant farm"
@@ -48,7 +48,7 @@ sceneData["Birthday1_1"] = [
 ];
 
 
-sceneData["Birthday1_2"] = [ 
+sceneData["Birthday_1_2"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I remember having so many friends, there were so many people at the party."
@@ -63,7 +63,7 @@ sceneData["Birthday1_2"] = [
 	}
 ];
 
-sceneData["Birthday1_3"] = [ 
+sceneData["Birthday_1_3"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "There wasn’t a fight, but I do remember being told off."
@@ -145,7 +145,7 @@ sceneData["Birthday_2_3"] = [
 		choices: [ 
 		  {
 		  	text: "I will always remember the party and blowing out all the candles in one go. Even at the age of fifteen that still made me proud. I never got to eat the cake mind you.",
-		  	goal: "tracking2"  
+		  	goal: "tracking_2"  
 		  }
 		] 
 	}
@@ -269,7 +269,7 @@ sceneData["Birthday_3_5"] = [
 		choices: [ 
 		  {
 		  	text: "I'd rather think about anything else. The anomoly. Think about that.",
-		  	goal: "tracking3" 
+		  	goal: "tracking_3" 
 		  }
 		] 
 	}
