@@ -91,7 +91,7 @@ sceneData["tracking_2_victim"] = [
 	}
 ];
 
-sceneData["tracking2_fool"] = [ 
+sceneData["tracking_2_fool"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I wait, there was something in the station."
@@ -106,7 +106,7 @@ sceneData["tracking2_fool"] = [
 	}
 ];
 
-sceneData["tracking2_evacuation"] = [ 
+sceneData["tracking_2_evacuation"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I wait, there was something in the station."
