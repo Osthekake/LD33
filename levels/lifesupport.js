@@ -176,7 +176,7 @@ sceneData["lifesupport_3_4"] = [
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-			text: "WHY IS THIS EVEN A BAD THING JOHN I DON'T UNDERSTAND",
+			text: "I have to becareful not to open any airlocks near the crew.",
 		  	goal: "lifesupport_3" 
 		  }
 		] 
@@ -187,12 +187,12 @@ sceneData["lifesupport_3_4"] = [
 sceneData["lifesupport_3_5"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "The crew are gone, they are all dead. ! didn’t save them."
+		text: "The crew are gone, they are all dead. I didn’t save them."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-			text: "*Q.Q",
+			text: "*No, there is still time, I can still get to them.",
 		  	goal: "lifesupport_3" 
 		  }
 		] 
@@ -208,7 +208,7 @@ sceneData["lifesupport_3_6"] = [
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-			text: "WHY DOES THIS LEAD TO THE CONCLUSION????",
+			text: "I head to the loading bay.  The door slowly open, with a sharp hiss as the pressure begin to equalise.  The air rushes out from behind me.  I'm spinning, past the loading bay through the open airlock.",
 		  	goal: "helmet_4" 
 		  }
 		] 
