@@ -7,12 +7,12 @@ sceneData["helmet_2"] = [
 		path: "saturn_colour.jpg" 
 	},{
 		application: loadingFunctions.text,
-		text: "I notice a thin line across my visor. My suit's leaking!"
+		text: "I don't seem to have any sealant anywhere, just an empty tube."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-		  	text: "Look for some sealant in pockets",
+		  	text: "Look for an air lock",
 		  	goal: "helmet_2_outro"
 		  }
 		] 
@@ -40,12 +40,12 @@ sceneData["helmet_3"] = [
 		path: "saturn_colour.jpg"
 	},{
 		application: loadingFunctions.text,
-		text: "I notice a thin line across my visor. My suit's leaking!"
+		text: "The leak is getting bigger."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-		  	text: "Look for some sealant in pockets",
+		  	text: "It's getting harder to move",
 		  	goal: "helmet_3_outro"
 		  }
 		] 
@@ -57,7 +57,7 @@ sceneData["helmet_3_outro"] = [
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-			text: "There are other items I can see floating. Something must of gone wrong with the airlocks",
+			text: "There are other items I can see floating. Something must have gone wrong with the airlocks",
 		  	goal: "Camping_3"
 		  }
 		] 
