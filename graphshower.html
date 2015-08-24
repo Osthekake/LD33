@@ -6,10 +6,14 @@
         <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
         <script type="text/javascript" src="levels.js"></script>
         <script type="text/javascript" src="levels/exam.js"></script>
-        <script type="text/javascript" src="levels/exam.js"></script>
         <script type="text/javascript" src="levels/camping.js"></script>
         <script type="text/javascript" src="levels/writing.js"></script>
-        <script type="text/javascript" src="levels/hemelt.js"></script>
+        <script type="text/javascript" src="levels/helmet.js"></script>
+        <script type="text/javascript" src="levels/tracking.js"></script>
+        <script type="text/javascript" src="levels/toys.js"></script>
+        <script type="text/javascript" src="levels/accident.js"></script>
+        <script type="text/javascript" src="levels/lifesupport.js"></script>
+        <script type="text/javascript" src="levels/birthday.js"></script>
         <script type="text/javascript" src="cytoscape.js"></script>
         <style>
 body { 
@@ -48,8 +52,13 @@ body {
 					}
 				};
 			});
+			console.log("nodes:");
+			console.log(nodeObject);
 			var edgeObject = $.map(sceneData, function(scene, scene_id){
+				console.log("scene: " + scene_id);
+				console.log(scene);
 				var choices = scene[scene.length - 1].choices;
+				console.log(choices);
 				return $.map(choices, function(choice, choice_index){
 					return {
 						group: 'edges', // 'nodes' for a node, 'edges' for an edge
@@ -63,7 +72,8 @@ body {
 					};
 				});
 			});
-
+			console.log("edges:");
+			console.log(edgeObject);
 			var cy = cytoscape({
 				style: cytoscape.stylesheet()
 				    .selector('node')

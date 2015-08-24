@@ -75,6 +75,9 @@ sceneData["writing1_3"] = [
 
 sceneData["writing2"] = [
 	{
+		application: loadingFunctions.setCrack,
+		level: 3
+	},{
 		application: loadingFunctions.text,
 		text: "Nothing I studied could explain the writing."
 	}, {
@@ -111,7 +114,7 @@ sceneData["writing2_1"] = [
 	{
 		application: loadingFunctions.text,
 		text: "It was a warning, the miners, they shouldn’t be here. Something had been awoken.",
-		goal : "writing2"
+		choices: [{goal : "writing2"}]
 	} 
 ];
 
@@ -119,7 +122,7 @@ sceneData["writing2_2"] = [
 	{
 		application: loadingFunctions.text,
 		text: "No, it can’t be. The writing was familiar. My hand was shaking because it was fighting, struggling not to write those words.",
-		goal : "writing2_4"
+		choices: [{goal : "writing2_4"}]
 	} 
 ];
 
@@ -127,7 +130,7 @@ sceneData["writing2_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "I don’t remember. I remember running, I don’t know if I was fleeing or chasing. ",
-		goal : "writing2"
+		choices: [{goal : "writing2"}]
 	} 
 ];
 
@@ -138,7 +141,7 @@ sceneData["writing2_4"] = [
 	}, {
 		application: loadingFunctions.text,
 		text: "Does he think I care about graffiti? There is something here with us, warning us. I need to warn the others about danger, get them somewhere safe. "
-		}, {
+	}, {	
 		application: loadingFunctions.choices,
 		choices: [ 
 			{
@@ -159,7 +162,7 @@ sceneData["writing2_5"] = [
 	{
 		application: loadingFunctions.text,
 		text: "The insects wouldn’t understand. Each doing their own thing, never understanding the whole.",
-		goal : "toys3"
+		choices: [{goal : "toys3"}]
 	} 
 ];
 
@@ -167,7 +170,7 @@ sceneData["writing2_2"] = [
 	{
 		application: loadingFunctions.text,
 		text: "Yes, I talked to Blackwood, explained there was something else here, something loose on the station, they should all get to safety.",
-		goal : "writing2"
+		choices: [{goal : "writing2"}]
 	} 
 ];
 
@@ -175,6 +178,6 @@ sceneData["writing2_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "There was something or someone in the control room. That thing wrote the warnings. ",
-		goal : "writing2"
+		choices: [{goal : "writing2"}]
 	} 
 ];
