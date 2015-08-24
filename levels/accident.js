@@ -171,7 +171,7 @@ sceneData["accident3_1"] = [
 ];
 
 
-sceneData["accident2_2"] = [ 
+sceneData["accident3_2"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -195,7 +195,7 @@ sceneData["accident3_3"] = [
 	}
 ];
 
-sceneData["accident2_out"] = [ 
+sceneData["accident3_out"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was driven backwards towards the station, and my magnetic boots saved me from rebounding off through the gaping hole which had been punched out of the outer shell of the platform. Bits of metal and blocks of instantly frozen gas slammed into the walls around me. I saw one of the icebergs heading straight for my helmet before I lost consciousness. The shape and colour of it were very strange, almost like it was reaching towards me."
