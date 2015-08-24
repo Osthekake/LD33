@@ -121,7 +121,7 @@ sceneData["accident2_out"] = [
 		choices: [ 
 		  {
 			text: "There was a flash in my vision like a firework as I passed out.",
-		  	goal: "Birthday2" 
+		  	goal: "Birthday_2" 
 		  }
 		] 
 	}
@@ -204,7 +204,7 @@ sceneData["accident2_out"] = [
 		choices: [ 
 		  {
 			text: "There was a flash in my vision like a firework as I passed out.",
-		  	goal: "Birthday3" 
+		  	goal: "Birthday_3" 
 		  }
 		] 
 	}
