@@ -184,7 +184,7 @@ sceneData["exam_3_1"] = [
 		  	}, {
 			  	upper: "I studied which fungus the ants ate.",
 			  	lower: "The interactions of the uninfected ants and the infected ants was fascinating.",
-			  	goal: "exam_3__2"
+			  	goal: "exam_3_2"
 		  	}
 		]
 	} 
