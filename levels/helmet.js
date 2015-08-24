@@ -63,3 +63,36 @@ sceneData["helmet_3_outro"] = [
 		] 
 	}
 ];
+
+sceneData["helmet_4"] = [ 
+	{
+		application: loadingFunctions.text,
+		text: "It is peaceful here now. All of the noise has stopped." 
+	},{
+		application: loadingFunctions.picture,
+		path: "saturn_colour.jpg"
+	},{
+		application: loadingFunctions.text,
+		text: "The floating things drift past me. Ants. Toys. Broken dolls. Dead miners."
+	},{
+		application: loadingFunctions.text,
+		text: "I remember so much, now. I’m still struggling to piece the memories together. The past life of this body. The past life of this mind. I became something new when I breathed me in, death-in-life, life-in-death, what am I now?"
+	},{
+		application: loadingFunctions.text,
+		text: "I opened the airlock and watched the crew’s silent screams as they spun into space. So peaceful now."
+	},{
+		application: loadingFunctions.text,
+		text: "The fevered writing, the nightmares, the terrible pain, all of it transient."
+	},{
+		application: loadingFunctions.text,
+		text: "I drift. My orbit decays, like my flesh. Soon I will return home."
+	},{
+		application: loadingFunctions.choices,
+		choices: [ 
+		  {
+		  	text: "They should not have hurt me.",
+		  	goal: "credits"
+		  }
+		] 
+	}
+];
