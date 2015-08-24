@@ -14,7 +14,7 @@ sceneData["tracking1"] = [
 	},{
 		application: loadingFunctions.text,
 		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack."
-	}{
+	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
