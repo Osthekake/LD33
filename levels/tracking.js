@@ -20,10 +20,10 @@ sceneData["tracking1"] = [
 		  {
 		  	text: "I helped set up the prank.",
 		  	goal: "tracking1_outro"
-		  }, {
+		  },{
 		  	text: "The prank completely fooled me",
 		  	goal: "tracking1_outro"
-		  }, {
+		  },{
 		  	text: "The prank caused an evacuation of the Beauly Campus",
 		  	goal: "tracking1_outro"
 		  }
@@ -58,16 +58,16 @@ sceneData["tracking2"] = [
 	},{
 		application: loadingFunctions.text,
 		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
-	}{
+	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 		  	text: "I played the part of a victim",
 		  	goal: "tracking2_victim"
-		  }, {
+		  },{
 		  	text: "The prank didn't fool anyone.",
 		  	goal: "tracking2_fool"
-		  }, {
+		  },{
 		  	text: "The prank caused an evacuation of the Beauly Campus",
 		  	goal: "tracking2_evacuation"
 		  }
@@ -134,7 +134,7 @@ sceneData["tracking3"] = [
 	},{
 		application: loadingFunctions.text,
 		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
-	}{
+	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
@@ -207,16 +207,16 @@ sceneData["tracking3_1"] = [
 	},{
 		application: loadingFunctions.text,
 		text: "I was so tired. So tired."
-	}{
+	},{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 		  	text: "I led the crew to the loading bay, it was safe there.",
 		  	goal: "tracking3_loading_bay"
-		  }, {
+		  },{
 		  	text: "I blacked out, for a while, but the crew managed to get to the loading bay",
 		  	goal: "tracking3_loading_bay"
-		  }, {
+		  },{
 		  	text: "The gas wasn’t stalking, it was herding.  I tried to tell the crew, tried so hard to contact Blackwood, tell him of the danger.",
 		  	goal: "tracking3_danger"
 		  }
