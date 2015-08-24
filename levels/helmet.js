@@ -54,7 +54,7 @@ sceneData["helmet3"] = [
 ];
 
 
-sceneData["helmet2_outro"] = [ 
+sceneData["helmet3_outro"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
