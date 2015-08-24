@@ -170,7 +170,7 @@ sceneData["writing_2_5"] = [
 ];
 
 sceneData["writing_2_6"] = [
-		goal : "toys_3"
+		goal : "toys_3",
 		choices: [{goal : "toys_3"}]
 	} 
 ];
@@ -189,7 +189,7 @@ sceneData["writing_2_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "There was something or someone in the control room. That thing wrote the warnings. ",
-		goal : "writing_2"
+		goal : "writing_2",
 		choices: [{goal : "writing_2"}]
 	} 
 ];
