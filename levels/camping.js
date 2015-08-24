@@ -14,10 +14,10 @@ sceneData["Camping1"] = [
 		  {
 		  	text: "I fell asleep knowing that I was safe inside my small tent",
 		  	goal: "Camping1_outro"
-		  }, {
+		  },{
 		  	text: "I felt claustrophobic inside the tent and wished I was back in my house",
 		  	goal: "Camping1_outro"
-		  }, {
+		  },{
 		  	text: "I lay awake for hours, listening to the raon mingled with the sound of my own breathing",
 		  	goal: "Camping1_outro"
 		  }
@@ -57,7 +57,6 @@ sceneData["Camping2"] = [
 		  {
 		  	text: "I spent hours lying awake and listening to the rain and the sound of my own breathing.",
 		  	goal: "Camping2_2"
-		  }
 		  }
 		] 
 	}
@@ -124,9 +123,7 @@ sceneData["Camping3"] = [
 			text: "I told a story about a kid who was dragged down a well by a secret civilisation of people who lived underground. Every year, another kid would be taken, and when they got old enough they would do it themselves, having forgotten everything about their families and even the sun itself.",
 		  	goal: "Camping3_sun" 
 		  }
-		] 
-	}
-		] 
+		]  
 	}
 ];
 
@@ -138,8 +135,6 @@ sceneData["Camping3_flats"] = [
 			text: "No that wasn't me, that was the tall Greek boy.",
 		  	goal: "Camping3" 
 		  }
-		] 
-	}
 		] 
 	}
 ];
@@ -157,8 +152,6 @@ sceneData["Camping3_old_woman"] = [
 		  }
 		] 
 	}
-		] 
-	}
 ];
 
 sceneData["Camping3_sun"] = [ 
@@ -169,8 +162,6 @@ sceneData["Camping3_sun"] = [
 			text: "Have I forgotten the sun.",
 		  	goal: "Camping3" 
 		  }
-		] 
-	}
 		] 
 	}
 ];
