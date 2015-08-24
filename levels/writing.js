@@ -3,6 +3,9 @@ sceneData["writing_1"] = [
 	{
 		application: loadingFunctions.text,
 		text: "Nothing I studied could explain the writing."
+	},{
+		application: loadingFunctions.picture,
+		path: "writing.jpg" 
 	}, {
 		application: loadingFunctions.text,
 		text: "The writing was gibberish. Someone had drawn strange unintelligible marks across the door to my cabin"+
@@ -77,6 +80,9 @@ sceneData["writing_2"] = [
 	{
 		application:loadingFunctions.setCrack,
 		level: 3
+	},{
+		application: loadingFunctions.picture,
+		path: "writing.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "Nothing I studied could explain the writing."
