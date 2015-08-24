@@ -83,7 +83,7 @@ sceneData["Birthday_2"] = [
 		text: "There was a bang then a flash." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "fireworks.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text:"I had fireworks for my birthday once. The cats were so scared and I was so happy. None of the other kids had fireworks at their parties. I was surprised as well, but mum and dad were always the best at surprises."
@@ -157,7 +157,7 @@ sceneData["Birthday_3"] = [
 		text: "There was a bang then a flash." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "fireworks.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text:"There were fireworks at Rosie’s birthday party. The cats were so scared, dashing out of the garden and down the street."

@@ -58,5 +58,27 @@
 		    	//Timer.start();
 			</script>
 		</div>
+		<div style="display: none;">
+			<script type="text/javascript">
+				<!--//--><![CDATA[//><!--
+					var images = new Array()
+					function preload() {
+						for (i = 0; i < preload.arguments.length; i++) {
+							images[i] = new Image()
+							images[i].src = preload.arguments[i]
+						}
+					}
+					preload(
+						"images/ants.jpg",
+						"images/camping.jpg",
+						"images/fireworks.jpg",
+						"images/saturn_colour.jpg",
+						"images/spaceship_interior.jpg",
+						"images/toys.jpg",
+						"images/tracking.jpg"
+					)
+				//--><!]]>
+			</script>
+		</div>
     </body>
 </html>

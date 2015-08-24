@@ -54,7 +54,7 @@ sceneData["tracking2"] = [
 		text: "I first spotted the anomaly in the station reports for air quality. The sensors kept reporting an unidentified pollutant. It wasn’t stationary, but it was always very localised" 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "tracking.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
@@ -130,7 +130,7 @@ sceneData["tracking3"] = [
 		text: "I first spotted the anomaly in the station reports for air quality. The sensors kept reporting an unidentified pollutant. It wasn’t stationary, but it was always very localised" 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "tracking.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
