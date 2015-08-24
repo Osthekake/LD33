@@ -47,7 +47,7 @@ sceneData["Camping2"] = [
 		text: "The feeling of being encased in the fabric of my spacesuit reminds me of going camping for the first time with my friends." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "camping.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "It rained the first night and I huddled in my tent listening to the patter of rain on canvas. I spent hours lying awake and listening to the rain and the sound of my own breathing."
@@ -103,7 +103,7 @@ sceneData["Camping3"] = [
 		text: "The feeling of being encased in the fabric of my spacesuit reminds me of going camping for the first time with my friends." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "camping.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "It rained the first night and I huddled in my tent listening to the patter of rain on canvas. I spent hours lying awake and listening to the rain and the sound of my own breathing."
@@ -118,7 +118,7 @@ sceneData["Camping3"] = [
 		  	goal: "Camping3_flats" 
 		  },{
 			text: "I told a story about a woman who was trapped in the walls of her house. Every day she would call out to the people who lived there, but they never answered her, just left food for her in the dumbwaiter. One day she managed to catch one of them and took over their life completely as if she had always been them.",
-		  	goal: "Caamping3_old_woman" 
+		  	goal: "Camping3_old_woman" 
 		  },{
 			text: "I told a story about a kid who was dragged down a well by a secret civilisation of people who lived underground. Every year, another kid would be taken, and when they got old enough they would do it themselves, having forgotten everything about their families and even the sun itself.",
 		  	goal: "Camping3_sun" 
