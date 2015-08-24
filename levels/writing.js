@@ -18,12 +18,12 @@ sceneData["writing_1"] = [
 		text: "Had one of the miners shown me?  I think so.  I can remember the strange markings. Conway the old miner, always one month away from retirement,  he had taken picture of some marks like these. "
 	}, {
 		application: loadingFunctions.text,
-		text: "He had seen them in the mine. "
+		text: "He had seen them on one of the mining barges. "
 	}, {
 		application: loadingFunctions.choices,
 		choices: [ 
 			{
-				text: "Did I know what the markings mean?",
+				text: "Did I know what the markings meant?",
 				goal: "writing_1_1" 
 			}, {
 				text: "Did I know who wrote the markings?",
@@ -98,12 +98,12 @@ sceneData["writing_2"] = [
 		text: "I think so. I can remember the words from a picture. Conway the old miner, always scurrying around like the little ant he was, he had taken picture of some markings like these."
 	}, {
 		application: loadingFunctions.text,
-		text: "He had seen them in the mine. "
+		text: "He had seen them scored into the side of one of the mining barges. "
 	}, {
 		application: loadingFunctions.choices,
 		choices: [ 
 			{
-				text: "Did I know what the markings mean?",
+				text: "Did I know what the markings meant?",
 				goal: "writing_2_1" 
 			}, {
 				text: "Did I know who wrote the markings?",
