@@ -29,3 +29,22 @@ Scene.setBackground = function(path){
 	}, 1000);
 	
 };
+
+Scene.setCrackLevel = function(level){
+	console.log("set crack level to " + level);
+	if(level >= 1){
+		$("#crack1").css({"opacity" : 1.0});
+	}else{
+		$("#crack1").css({"opacity" : 0.0});
+	}
+	if(level >= 2){
+		$("#crack2").css({"opacity" : 1.0});
+	}else{
+		$("#crack2").css({"opacity" : 0.0});
+	}
+	if(level >= 3){
+		$("#crack3").css({"opacity" : 1.0});
+	}else{
+		$("#crack3").css({"opacity" : 0.0});
+	}
+}

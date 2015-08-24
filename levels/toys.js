@@ -1,10 +1,10 @@
 sceneData["toys1"] = [ 
 	{
+		application: loadingFunctions.picture,
+		path: "toys.jpg" 
+	},{
 		application: loadingFunctions.text,
 		text: "I remember when I was very young I had an actual Tracy Island." 
-	},{
-		application: loadingFunctions.picture,
-		path: "next.png" 
 	},{
 		application: loadingFunctions.text,
 		text: "I used to play with it for hours."

@@ -5,6 +5,9 @@
 
 sceneData["exam_1_1"] = [
 	{
+		application: loadingFunctions.picture,
+		path: "ants.jpg" 
+	}, {
 		application: loadingFunctions.text,
 		text: "I was the only person to study ants that year."
 	}, {

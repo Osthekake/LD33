@@ -4,7 +4,7 @@ sceneData["accident1"] = [
 		text: "I was nearest to the gas extraction platform when the alarm went off, and I was the first on the scene. A leakage in the gas transferral system. If I couldn't stop the leak quickly, it would grow to a full rupture, and we would lose the tanks and maybe the whole spoke-arm of the orbital station." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "spaceship_interior.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "I shut the airlock and started cycling the air out of the room I was in. I had to do it carefully or I wouldn't be able to find the leak before the pressure changes tore the metal apart, but I would never be able to find it in time otherwise."

@@ -32,6 +32,12 @@ Level.renderPicture = function(path){
 	Scene.setBackground(path);
 }
 
+Level.setCrackLevel = function(level){
+	Level.sceneIndex += 1;
+	render();
+	Scene.setCrackLevel(level);
+}
+
 function next(){
 	Level.sceneIndex += 1;
 	Scene.fadeOutThenIn(render);

@@ -70,6 +70,9 @@ var loadingFunctions = {
 	},
 	picture: function(pictureObject){ // use this to display a picture or change which picture is being displayed
 		Level.renderPicture(pictureObject.path);
+	},
+	setCrack: function(obj){
+		Level.setCrackLevel(obj.level);
 	}
 };
 
@@ -102,9 +105,6 @@ sceneData["intro"] = [ // a scene is denominated by a key string. This scene has
 		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby." // a single string called 'text'. Only this string will be displayed.
 		// possibly there will be more (optional) data here in the future: Font, transition, style
 	},{
-		application: loadingFunctions.picture, // This will alter the background picture.
-		path: "next.png" 
-	},{
 		application: loadingFunctions.text,
 		text: "It's quieter than the sound of my own breathing." // Keep in mind that this line might become large on screen.
 	},{
@@ -127,6 +127,9 @@ sceneData["intro"] = [ // a scene is denominated by a key string. This scene has
 //these could theoretically go into different files, if we want to split it up into levels or something.
 sceneData["cracked_visor1"] = [ // this is the scene referred to above.
 	{
+		application: loadingFunctions.setCrack,
+		level: 1
+	},{
 		application: loadingFunctions.text,
 		text: "There's a thin line across my visor. My suit's leaking!"
 	},{
