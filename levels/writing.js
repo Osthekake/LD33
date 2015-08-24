@@ -132,7 +132,7 @@ sceneData["writing_2_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "I don’t remember. I remember running, I don’t know if I was fleeing or chasing. ",
-		goal : "writing_2"
+		goal : "writing_2",
 		choices: [{goal : "writing_2"}]
 	} 
 ];
@@ -179,7 +179,7 @@ sceneData["writing_2_2"] = [
 	{
 		application: loadingFunctions.text,
 		text: "Yes, I talked to Blackwood, explained there was something else here, something loose on the station, they should all get to safety.",
-		goal : "writing_2"
+		goal : "writing_2",
 		choices: [{goal : "writing_2"}]
 	} 
 ];
