@@ -40,6 +40,8 @@ body{
 }
 
 #stage{
+	position:relative;
+	top:15%;
 	color: crimson;
 	font-size:25px;
 	text-align: center;

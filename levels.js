@@ -78,7 +78,7 @@ var loadingFunctions = {
 
 // Actual data. This is where lots and lots of stuff goes.
 var sceneData = {};
-
+/*
 sceneData["couple_test"] = [
 	{
 		application: loadingFunctions.coupled_choices,	
@@ -95,11 +95,26 @@ sceneData["couple_test"] = [
 		]
 	}
 ];
+*/
+
+sceneData["credits"] = [
+	{
+		application: loadingFunctions.text,
+		text: "<h3>Thanks for playing!</h3>"+
+				"<h4>Written by</h4>"+
+				"<ul><li>Kveldsdraum</li><li>AnkiTasi</li></ul>"+
+				"<h4>Programming and art by</h4>"+
+				"<ul><li>Osthekake</li></ul>"+
+				"<h4>Photographs</h4>"+
+				"<ul><li>Wikimedia Commons</li><li>Sean Dreilinger</li></ul>",
+		choices:[{goal: "menu"}]
+	}
+];
 
 sceneData["menu"] = [
 	{
 		application: loadingFunctions.titleScreen,
-		text: "Welcome to our game."
+		text: "Welcome to our game"
 	},
 	{
 		application: loadingFunctions.choices,

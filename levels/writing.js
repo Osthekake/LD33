@@ -173,7 +173,9 @@ sceneData["writing_2_5"] = [
 ];
 
 sceneData["writing_2_6"] = [
-		goal : "toys_3",
+	{
+		application: loadingFunctions.text,
+		text: "Yes, I talked to Blackwood, explained there was something else here, something loose on the station, they should all get to safety.",
 		choices: [{goal : "toys_3"}]
 	} 
 ];
