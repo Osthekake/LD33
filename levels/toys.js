@@ -1,4 +1,4 @@
-sceneData["toys1"] = [ 
+sceneData["toys_1"] = [ 
 	{
 		application: loadingFunctions.picture,
 		path: "toys.jpg" 
@@ -13,20 +13,20 @@ sceneData["toys1"] = [
 		choices: [ 
 		  {
 		  	text: "Lady Penelope was my favourite",
-		  	goal: "toys1_outro"
+		  	goal: "toys_1_outro"
 		  }, {
 		  	text: "Brains was my favourite",
-		  	goal: "toys1_outro"
+		  	goal: "toys_1_outro"
 		  }, {
 		  	text: "Alan Tracy was my favourite",
-		  	goal: "toys1_outro"
+		  	goal: "toys_1_outro"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["toys1_outro"] = [ 
+sceneData["toys_1_outro"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "Most of the games I made up with them had International Rescue save all my other toys from whatever disaster befell them."
@@ -38,7 +38,7 @@ sceneData["toys1_outro"] = [
 		choices: [ 
 		  {
 			text: "I used to love those games, why did I ever stop playing?",
-		  	goal: "helmet2" 
+		  	goal: "helmet_2" 
 		  }
 		] 
 	}

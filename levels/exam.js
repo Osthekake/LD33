@@ -81,7 +81,7 @@ sceneData["exam_1_3"] = [
 	}, {
 		application: loadingFunctions.text,
 		text: "It was all but impossible to get funding unless you could say how your work was relevant to mining the night sky.",
-		choices: [{goal: "toys1"}]
+		choices: [{goal: "toys_1"}]
 	}
 ]; 
 
@@ -147,7 +147,7 @@ sceneData["exam_2_3"] = [
 	}, {
 		application: loadingFunctions.text,
 		text: "It was all but impossible to get funding unless you could say how your work was relevant to mining the night sky.",
-		choices:[{goal: "writing1"}]
+		choices:[{goal: "writing_1"}]
 	}
 ]; 
 
@@ -228,7 +228,7 @@ sceneData["exam_3_3"] = [
 		choices: [
 	  {
 		text: "I discovered the fungus was safe, but there was something else there.",
-		goal: "writing2"
+		goal: "writing_2"
 	  }
 	]
 }
@@ -243,7 +243,7 @@ sceneData["examdummy"] = [
 		choices: [
 	  {
 		text: "I discovered the fungus was safe, but there was something else there.",
-		goal: "writing2"
+		goal: "writing_2"
 	  }
 	]
 }
