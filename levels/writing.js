@@ -114,7 +114,7 @@ sceneData["writing_2_1"] = [
 	{
 		application: loadingFunctions.text,
 		text: "It was a warning, the miners, they shouldn’t be here. Something had been awoken.",
-		goal : "writing_2"
+		goal : "writing_2",
 		choices: [{goal : "writing2"}]
 	} 
 ];
@@ -155,11 +155,7 @@ sceneData["writing_2_4"] = [
 				goal: "writing_2_6" 
 			}, {
 				text: "Did I see the markings in the Life Support control room?",
-<<<<<<< HEAD
 				goal: "writing2_7" 
-=======
-				goal: "writing_2_6" 
->>>>>>> origin/master
 			} 
 		] 
 	}
@@ -169,37 +165,31 @@ sceneData["writing_2_5"] = [
 	{
 		application: loadingFunctions.text,
 		text: "The insects wouldn’t understand. Each doing their own thing, never understanding the whole.",
-<<<<<<< HEAD
 		choices: [{goal : "toys_3"}]
 	} 
 ];
 
-sceneData["writing2_6"] = [
-=======
+sceneData["writing_2_6"] = [
 		goal : "toys_3"
 		choices: [{goal : "toys3"}]
 	} 
 ];
 
 sceneData["writing_2_2"] = [
->>>>>>> origin/master
 	{
 		application: loadingFunctions.text,
 		text: "Yes, I talked to Blackwood, explained there was something else here, something loose on the station, they should all get to safety.",
 		goal : "writing_2"
-		choices: [{goal : "writing2"}]
+		choices: [{goal : "writing_2"}]
 	} 
 ];
 
-<<<<<<< HEAD
-sceneData["writing2_7"] = [
-=======
+
 sceneData["writing_2_3"] = [
->>>>>>> origin/master
 	{
 		application: loadingFunctions.text,
 		text: "There was something or someone in the control room. That thing wrote the warnings. ",
 		goal : "writing_2"
-		choices: [{goal : "writing2"}]
+		choices: [{goal : "writing_2"}]
 	} 
 ];
