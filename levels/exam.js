@@ -88,6 +88,9 @@ sceneData["exam_1_3"] = [
 
 sceneData["exam_2_1"] = [
 	{
+		application: loadingFunctions.picture,
+		path: "ants.jpg" 
+	},{
 		application: loadingFunctions.text,
 		text: "I was the only person to study ants that year. I think the professor was scared of ants and didn’t want to supervise a dissertation about them. I think the professor was scared of ants and didn’t want to supervise a dissertation about them."
 	},{
@@ -112,13 +115,11 @@ sceneData["exam_2_1"] = [
 		application: loadingFunctions.coupled_choices,	
 		choices: [
 			{
-			  	upper: "I studied how the ants’ society worked.",
-			  	lower: "While I was there I read the novelisation of the movie Alien.",
-			  	goal: "exam_2_1"
+			  	text: "I studied how the ants’ society worked.",
+			  	goal: "exam_2_2"
 		  	}, {
-			  	upper: "I studied how ants combated invaders.",
-			  	lower: "While I was there I read the novelisation of John Carpenter's The Thing.",
-			  	goal: "exam_2_1"
+			  	text: "I studied how ants combated invaders.",
+			  	goal: "exam_2_2"
 		  	}, {
 			  	upper: "I studied which fungus the ants ate.",
 			  	lower: "The interactions of the uninfected ants and the infected ants was fascinating.",
@@ -126,6 +127,14 @@ sceneData["exam_2_1"] = [
 		  	}
 		]
 	} 
+];
+
+sceneData["exam_2_2"] = [
+	 {
+		application: loadingFunctions.text,
+		text: "While I was there I read the novelisation of John Carpenter's The Thing.",
+		choices:[{goal: "exam_2_1"}]
+	}
 ];
 
 sceneData["exam_2_3"] = [
