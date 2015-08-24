@@ -13,7 +13,7 @@ sceneData["tracking_1"] = [
 		text:"It wasn’t stationary, but it was always very localised."
 	},{
 		application: loadingFunctions.text,
-		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack."
+		text: "The reading reminded me of a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -35,7 +35,7 @@ sceneData["tracking_1"] = [
 sceneData["tracking_1_outro"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "The entire campus was evacuated for an entire day, the prank even made the national news.  Considering the all the panic about the terrorists I’m surprised we got off so lightly."
+		text: "The entire campus was evacuated for an whole day, the prank even made the national news.  Considering the all the panic about terrorists I’m surprised we got off so lightly."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -50,14 +50,17 @@ sceneData["tracking_1_outro"] = [
 
 sceneData["tracking_2"] = [ 
 	{
+		application:loadingFunctions.text,
+		text: "That breath of smoke and wish for the future changed things..."
+	},{
 		application: loadingFunctions.text,
-		text: "I first spotted the anomaly in the station reports for air quality. The sensors kept reporting an unidentified pollutant. It wasn’t stationary, but it was always very localised" 
+		text: "I first spotted the gas anomaly in the station reports for air quality. The sensors kept reporting an unidentified pollutant. It wasn’t stationary, but it was always very localised" 
 	},{
 		application: loadingFunctions.picture,
 		path: "tracking.jpg" 
 	},{
 		application: loadingFunctions.text,
-		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
+		text: "The reading reminded me of a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -84,7 +87,7 @@ sceneData["tracking_2_victim"] = [
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-			text: "I wait, there was something in the station.",
+			text: "I - wait, there was something in the station.",
 		  	goal: "tracking_2" 
 		  }
 		] 
@@ -94,7 +97,7 @@ sceneData["tracking_2_victim"] = [
 sceneData["tracking_2_fool"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "I wait, there was something in the station."
+		text: "I - wait, there was something in the station."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -109,10 +112,10 @@ sceneData["tracking_2_fool"] = [
 sceneData["tracking_2_evacuation"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "I wait, there was something in the station."
+		text: "I - wait, there was something in the station."
 	},{
 		application: loadingFunctions.text,
-		text: "I signaled to the station's crew about the pollutant, told them where was safe."
+		text: "I signaled to the station's crew about the pollutant, told them where it was safe to go."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -133,7 +136,7 @@ sceneData["tracking_3"] = [
 		path: "tracking.jpg" 
 	},{
 		application: loadingFunctions.text,
-		text: "The reading reminded me of was was a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
+		text: "The reading reminded me of a prank by some of Professor Ellery’s biochemistry students, where we faked a gas attack. I was only involved because I was dating Arness."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -160,7 +163,7 @@ sceneData["tracking_3_victim"] = [
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
-			text: "I wait, there was something in the station.",
+			text: "I - wait, no, there was something in the station.",
 		  	goal: "tracking_3" 
 		  }
 		] 
@@ -170,7 +173,7 @@ sceneData["tracking_3_victim"] = [
 sceneData["tracking_3_fool"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "I wait, there was something in the station."
+		text: "I - wait, hold on, there was something in the station."
 	},{
 		application: loadingFunctions.choices,
 		choices: [ 
@@ -185,7 +188,7 @@ sceneData["tracking_3_fool"] = [
 sceneData["tracking_3_evacuation"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "I wait, there was something in the station."
+		text: "I - wait, no, I- there was something in the station."
 	},{
 		application: loadingFunctions.text,
 		text: "I signaled to the station's crew about the pollutant, told them where was safe. I didn’t want them to be herded."
@@ -203,7 +206,7 @@ sceneData["tracking_3_evacuation"] = [
 sceneData["tracking_3_1"] = [ 
 	{
 		application: loadingFunctions.text,
-		text: "I could track the gas by the station sensors.  It was moving.  I was finding it hard to focus, my eyes would lose focus. It couldn’t be the gas, it was no where near me." 
+		text: "I could track the gas by the station sensors.  It was moving.  I was finding it hard to focus, my eyes kept blurring. It couldn’t be the gas, it was nowhere near me." 
 	},{
 		application: loadingFunctions.text,
 		text: "I was so tired. So tired."
@@ -214,7 +217,7 @@ sceneData["tracking_3_1"] = [
 		  	text: "I led the crew to the loading bay, it was safe there.",
 		  	goal: "tracking_3_loading_bay"
 		  },{
-		  	text: "I blacked out, for a while, but the crew managed to get to the loading bay",
+		  	text: "I blacked out for a while, but the crew managed to get to the loading bay",
 		  	goal: "tracking_3_loading_bay"
 		  },{
 		  	text: "The gas wasn’t stalking, it was herding.  I tried to tell the crew, tried so hard to contact Blackwood, tell him of the danger.",
