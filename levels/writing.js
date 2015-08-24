@@ -33,31 +33,44 @@ sceneData["writing1"] = [
 	} 
 ];
 
-sceneData["writing1_1"] = [
+
+sceneData["writing1_1"] = [ 
 	{
-		application: loadingFunctions.text,
-		text: "No, they were alien, impossible to understand. What ever painted the marking on the wall must of have been injured, the writing looked so shaky",
-		goal : "writing1"
-	} 
+		application: loadingFunctions.choices,
+		choices: [ 
+		  {
+			text: "No, they were alien, impossible to understand. What ever painted the marking on the wall must of have been injured, the writing looked so shaky",
+		  	goal: "writing1" 
+		  }
+		] 
+	}
 ];
 
-sceneData["writing1_2"] = [
+sceneData["writing1_2"] = [ 
 	{
-		application: loadingFunctions.text,
-		text: "No, of course not, the writing are horrid, unnatural, alien",
-		goal : "writing1"
-	} 
+		application: loadingFunctions.choices,
+		choices: [ 
+		  {
+			text: "No, of course not, the writing are horrid, unnatural, alien.",
+		  	goal: "writing1" 
+		  }
+		] 
+	}
 ];
 
 sceneData["writing1_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "No, of course not, the writing are horrid, unnatural, alien"
-	},{
-		application: loadingFunctions.text,
-		text: "There were more markings, inside my locker and across the floor of science laboratory. Despite all this, Blackwood of all people kept on leaving messages about graffiti. Does he think I care about graffiti?",
-		goal "toys2"
-	}, 
+	}, {
+		application: loadingFunctions.choices,
+		choices: [ 
+		  {
+			text: "There were more markings, inside my locker and across the floor of science laboratory. Despite all this, Blackwood of all people kept on leaving messages about graffiti. Does he think I care about graffiti?",
+		  	goal: "toys2" 
+		  }
+		] 
+	}
 ];
 
 sceneData["writing2"] = [
