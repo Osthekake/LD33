@@ -211,9 +211,11 @@ sceneData["exam_3_3"] = [
 	}, {
 		application: loadingFunctions.choices,
 		choices: [
+		{
 		text: "I discovered the fungus was safe, but there was something else there."
 		goal: "writing2"
 	}
 	]
+}
 ];
 //more to do..
