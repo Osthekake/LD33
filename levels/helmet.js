@@ -1,10 +1,10 @@
-sceneData["helmet2"] = [ 
+sceneData["helmet_2"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby. It's quieter than the sound of my own breathing." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "saturn_colour.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "I notice a thin line across my visor. My suit's leaking!"
@@ -13,32 +13,32 @@ sceneData["helmet2"] = [
 		choices: [ 
 		  {
 		  	text: "Look for some sealant in pockets",
-		  	goal: "helmet2_outro"
+		  	goal: "helmet_2_outro"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["helmet2_outro"] = [ 
+sceneData["helmet_2_outro"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "I keep fading in and out of consciousness",
-		  	goal: "Camping2" 
+		  	goal: "Camping_2" 
 		  }
 		] 
 	}
 ];
 
-sceneData["helmet3"] = [ 
+sceneData["helmet_3"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "When I listen closely I can hear a very faint hissing coming from somewhere nearby. It's quieter than the sound of my own breathing." 
 	},{
 		application: loadingFunctions.picture,
-		path: "next.png" 
+		path: "saturn_colour.jpg" 
 	},{
 		application: loadingFunctions.text,
 		text: "I notice a thin line across my visor. My suit's leaking!"
@@ -47,20 +47,20 @@ sceneData["helmet3"] = [
 		choices: [ 
 		  {
 		  	text: "Look for some sealant in pockets",
-		  	goal: "helmet3_outro"
+		  	goal: "helmet_3_outro"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["helmet3_outro"] = [ 
+sceneData["helmet_3_outro"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "There are other items I can see floating. Something must of gone wrong with the airlocks",
-		  	goal: "Camping3"
+		  	goal: "Camping_3"
 		  }
 		] 
 	}
