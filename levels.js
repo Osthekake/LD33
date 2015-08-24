@@ -137,7 +137,7 @@ sceneData["cracked_visor1"] = [ // this is the scene referred to above.
 		choices: [ 
 		  {
 		  	text: "Look for some sealant in pockets",
-		  	goal: "Camping1"
+		  	goal: "Camping_1"
 		  }
 		] // This list can be of any non-zero length. Here there is only one choice.
 	}
