@@ -72,7 +72,7 @@ sceneData["Birthday_1_3"] = [
 		choices: [ 
 		  {
 		  	text: "I will always remember the party and blowing out all the candles in one go. and being chased around by Rosie's dog.",
-		  	goal: "tracking1"  
+		  	goal: "tracking_1"  
 		  }
 		] 
 	}
@@ -103,7 +103,6 @@ sceneData["Birthday_2"] = [
 		] 
 	}
 ];
-
 
 sceneData["Birthday_2_1"] = [ 
 	{
