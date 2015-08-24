@@ -153,6 +153,9 @@ sceneData["exam_2_3"] = [
 
 sceneData["exam_3_1"] = [
 	{
+		application: loadingFunctions.picture,
+		path: "ants.jpg" 
+	}, {
 		application: loadingFunctions.text,
 		text: "I was the only person to study ants that year. I think the professor was scared of ants and didn’t want to supervise a dissertation about them. I think the professor was scared of ants and didn’t want to supervise a dissertation about them."
 	}, {
@@ -206,10 +209,10 @@ sceneData["exam_3_2"] = [
 		  	goal: "exam_3_3"
 		  },{
 		  	text: "The prank completely fooled me",
-		  	goal: "exam_3_4"
+		  	goal: "exam_3_1"
 		  },{
 		  	text: "The prank caused an evacuation of the Beauly Campus",
-		  	goal: "exam_3_5"
+		  	goal: "exam_3_1"
 		  }
 		] 
 	}
