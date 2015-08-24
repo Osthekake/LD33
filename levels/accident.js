@@ -1,4 +1,4 @@
-sceneData["accident1"] = [ 
+sceneData["accident_1"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was nearest to the gas extraction platform when the alarm went off, and I was the first on the scene. A leakage in the gas transferral system. If I couldn't stop the leak quickly, it would grow to a full rupture, and we would lose the tanks and maybe the whole spoke-arm of the orbital station." 
@@ -16,20 +16,20 @@ sceneData["accident1"] = [
 		choices: [ 
 		  {
 		  	text: "Other than being knocked back, I suffered no further damage",
-		  	goal: "accident1_outro"
+		  	goal: "accident_1_outro"
 		  }, {
 		  	text: "Other than being knocked back the station suffered no further damage",
-		  	goal: "accident1_outro"
+		  	goal: "accident_1_outro"
 		  }, {
 		  	text: "I was slightly injured by the blast",
-		  	goal: "accident1_outro"
+		  	goal: "accident_1_outro"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["accident1_outro"] = [ 
+sceneData["accident_1_outro"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was driven backwards towards the station, and my magnetic boots saved me from rebounding off through the gaping hole which had been punched out of the outer shell of the platform. Bits of metal and blocks of instantly frozen gas slammed into the walls around me. I lost consciousness."
@@ -38,13 +38,13 @@ sceneData["accident1_outro"] = [
 		choices: [ 
 		  {
 			text: "There was a flash in my vision like a firework as I passed out.",
-		  	goal: "Birthday1" 
+		  	goal: "Birthday_1" 
 		  }
 		] 
 	}
 ];
 
-sceneData["accident2"] = [ 
+sceneData["accident_2"] = [ 
 	{
 		application: loadingFunctions.setCrack,
 		level: 2
@@ -65,57 +65,57 @@ sceneData["accident2"] = [
 		choices: [ 
 		  {
 		  	text: "Other than being knocked back, I suffered no further damage",
-		  	goal: "accident2_1"
+		  	goal: "accident_2_1"
 		  }, {
 		  	text: "Other than being knocked back the station suffered no further damage",
-		  	goal: "accident2_2"
+		  	goal: "accident_2_2"
 		  }, {
 		  	text: "I was slightly injured by the blast",
-		  	goal: "accident2_3"
+		  	goal: "accident_2_3"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["accident2_1"] = [ 
+sceneData["accident_2_1"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "Wasn’t hurt but something was wrong",
-		  	goal: "accident2" 
+		  	goal: "accident_2" 
 		  }
 		] 
 	}
 ];
 
 
-sceneData["accident2_2"] = [ 
+sceneData["accident_2_2"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "The station was undamaged, but something bad happened to it.",
-		  	goal: "accident2" 
+		  	goal: "accident_2" 
 		  }
 		] 
 	}
 ];
 
-sceneData["accident2_3"] = [ 
+sceneData["accident_2_3"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "My helmet took a nasty knock.",
-		  	goal: "accident2_out" 
+		  	goal: "accident_2_out" 
 		  }
 		] 
 	}
 ];
 
-sceneData["accident2_out"] = [ 
+sceneData["accident_2_out"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was driven backwards towards the station, and my magnetic boots saved me from rebounding off through the gaping hole which had been punched out of the outer shell of the platform. Bits of metal and blocks of instantly frozen gas slammed into the walls around me. I saw one of the icebergs heading straight for my helmet before I lost consciousness."
@@ -130,7 +130,7 @@ sceneData["accident2_out"] = [
 	}
 ];
 
-sceneData["accident3"] = [ 
+sceneData["accident_3"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was nearest to the gas extraction platform when the alarm went off, and I was the first on the scene. A leakage in the gas transferral system. If I couldn't stop the leak quickly, it would grow to a full rupture, and we would lose the tanks and maybe the whole spoke-arm of the orbital station." 
@@ -148,57 +148,59 @@ sceneData["accident3"] = [
 		choices: [ 
 		  {
 		  	text: "Other than being knocked back, I suffered no further damage",
-		  	goal: "accident3_1"
+		  	goal: "accident_3_1"
 		  }, {
 		  	text: "Other than being knocked back the station suffered no further damage",
-		  	goal: "accident3_2"
+		  	goal: "accident_3_2"
 		  }, {
 		  	text: "I was slightly injured by the blast",
-		  	goal: "accident3_3"
+		  	goal: "accident_3_3"
 		  }
 		] 
 	}
 ];
 
 
-sceneData["accident3_1"] = [ 
+sceneData["accident_3_1"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "Wasn’t hurt was I? What happened to me?",
-		  	goal: "accident3" 
+		  	goal: "accident_3" 
 		  }
 		] 
 	}
 ];
 
 
-sceneData["accident3_2"] = [ 
+sceneData["accident_3_2"] = [ 
+
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "The station was undamaged, but something bad got in to it .",
-		  	goal: "accident3" 
+		  	goal: "accident_3" 
 		  }
 		] 
 	}
 ];
 
-sceneData["accident3_3"] = [ 
+sceneData["accident_3_3"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "My helmet took a nasty knock.  There was an odd taste to the air",
-		  	goal: "accident3_out" 
+		  	goal: "accident_3_out" 
 		  }
 		] 
 	}
 ];
 
-sceneData["accident3_out"] = [ 
+
+sceneData["accident_3_out"] = [ 
 	{
 		application: loadingFunctions.text,
 		text: "I was driven backwards towards the station, and my magnetic boots saved me from rebounding off through the gaping hole which had been punched out of the outer shell of the platform. Bits of metal and blocks of instantly frozen gas slammed into the walls around me. I saw one of the icebergs heading straight for my helmet before I lost consciousness. The shape and colour of it were very strange, almost like it was reaching towards me."

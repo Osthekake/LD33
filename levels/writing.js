@@ -1,5 +1,5 @@
 //Put stuff in here. see level.js for examples with comments.
-sceneData["writing1"] = [
+sceneData["writing_1"] = [
 	{
 		application: loadingFunctions.text,
 		text: "Nothing I studied could explain the writing."
@@ -21,44 +21,44 @@ sceneData["writing1"] = [
 		choices: [ 
 			{
 				text: "Did I know what the markings mean?",
-				goal: "writing1_1" 
+				goal: "writing_1_1" 
 			}, {
 				text: "Did I know who wrote the markings?",
-				goal: "writing1_2" 
+				goal: "writing_1_2" 
 			}, {
 				text: "Did I flee the markings?",
-				goal: "writing1_3" 
+				goal: "writing_1_3" 
 			}, 
 		] 
 	} 
 ];
 
 
-sceneData["writing1_1"] = [ 
+sceneData["writing_1_1"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "No, they were alien, impossible to understand. What ever painted the marking on the wall must of have been injured, the writing looked so shaky",
-		  	goal: "writing1" 
+		  	goal: "writing_1" 
 		  }
 		] 
 	}
 ];
 
-sceneData["writing1_2"] = [ 
+sceneData["writing_1_2"] = [ 
 	{
 		application: loadingFunctions.choices,
 		choices: [ 
 		  {
 			text: "No, of course not, the writing are horrid, unnatural, alien.",
-		  	goal: "writing1" 
+		  	goal: "writing_1" 
 		  }
 		] 
 	}
 ];
 
-sceneData["writing1_3"] = [
+sceneData["writing_1_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "No, of course not, the writing are horrid, unnatural, alien"
@@ -73,9 +73,9 @@ sceneData["writing1_3"] = [
 	}
 ];
 
-sceneData["writing2"] = [
+sceneData["writing_2"] = [
 	{
-		application: loadingFunctions.setCrack,
+		application:loadingFunctions.setCrack,
 		level: 3
 	},{
 		application: loadingFunctions.text,
@@ -98,43 +98,46 @@ sceneData["writing2"] = [
 		choices: [ 
 			{
 				text: "Did I know what the markings mean?",
-				goal: "writing2_1" 
+				goal: "writing_2_1" 
 			}, {
 				text: "Did I know who wrote the markings?",
-				goal: "writing2_2" 
+				goal: "writing_2_2" 
 			}, {
 				text: "Did I flee the markings?",
-				goal: "writing2_3" 
+				goal: "writing_2_3" 
 			} 
 		] 
 	} 
 ];
 
-sceneData["writing2_1"] = [
+sceneData["writing_2_1"] = [
 	{
 		application: loadingFunctions.text,
 		text: "It was a warning, the miners, they shouldn’t be here. Something had been awoken.",
+		goal : "writing_2"
 		choices: [{goal : "writing2"}]
 	} 
 ];
 
-sceneData["writing2_2"] = [
+sceneData["writing_2_2"] = [
 	{
 		application: loadingFunctions.text,
 		text: "No, it can’t be. The writing was familiar. My hand was shaking because it was fighting, struggling not to write those words.",
+		goal : "writing_2_4"
 		choices: [{goal : "writing2_4"}]
 	} 
 ];
 
-sceneData["writing2_3"] = [
+sceneData["writing_2_3"] = [
 	{
 		application: loadingFunctions.text,
 		text: "I don’t remember. I remember running, I don’t know if I was fleeing or chasing. ",
+		goal : "writing_2"
 		choices: [{goal : "writing2"}]
 	} 
 ];
 
-sceneData["writing2_4"] = [
+sceneData["writing_2_4"] = [
 	{
 		application: loadingFunctions.text,
 		text: "There was more writing, more words, inside my locker and across the floor of science laboratory. Always the same. A warning of something, afraid and angry.  Blackwood the site manager keeps leaving me messages about graffiti."
@@ -146,38 +149,57 @@ sceneData["writing2_4"] = [
 		choices: [ 
 			{
 				text: "Did I warn the miners?",
-				goal: "writing2_5" 
+				goal: "writing_2_5" 
 			}, {
 				text: "Did I speak to Blackwood about the graffiti?",
-				goal: "writing2_6" 
+				goal: "writing_2_6" 
 			}, {
 				text: "Did I see the markings in the Life Support control room?",
+<<<<<<< HEAD
 				goal: "writing2_7" 
+=======
+				goal: "writing_2_6" 
+>>>>>>> origin/master
 			} 
 		] 
 	}
 ];
 
-sceneData["writing2_5"] = [
+sceneData["writing_2_5"] = [
 	{
 		application: loadingFunctions.text,
 		text: "The insects wouldn’t understand. Each doing their own thing, never understanding the whole.",
+<<<<<<< HEAD
 		choices: [{goal : "toys_3"}]
 	} 
 ];
 
 sceneData["writing2_6"] = [
+=======
+		goal : "toys_3"
+		choices: [{goal : "toys3"}]
+	} 
+];
+
+sceneData["writing_2_2"] = [
+>>>>>>> origin/master
 	{
 		application: loadingFunctions.text,
 		text: "Yes, I talked to Blackwood, explained there was something else here, something loose on the station, they should all get to safety.",
+		goal : "writing_2"
 		choices: [{goal : "writing2"}]
 	} 
 ];
 
+<<<<<<< HEAD
 sceneData["writing2_7"] = [
+=======
+sceneData["writing_2_3"] = [
+>>>>>>> origin/master
 	{
 		application: loadingFunctions.text,
 		text: "There was something or someone in the control room. That thing wrote the warnings. ",
+		goal : "writing_2"
 		choices: [{goal : "writing2"}]
 	} 
 ];
