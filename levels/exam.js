@@ -112,7 +112,7 @@ sceneData["exam_2_1"] = [
 		application: loadingFunctions.text,
 		text: "I knew they were dead, but still they looked alive."
 	}, {
-		application: loadingFunctions.coupled_choices,	
+		application: loadingFunctions.choices,	
 		choices: [
 			{
 			  	text: "I studied how the ants’ society worked.",
@@ -121,8 +121,7 @@ sceneData["exam_2_1"] = [
 			  	text: "I studied how ants combated invaders.",
 			  	goal: "exam_2_2"
 		  	}, {
-			  	upper: "I studied which fungus the ants ate.",
-			  	lower: "The interactions of the uninfected ants and the infected ants was fascinating.",
+			  	text: "The interactions of the uninfected ants and the infected ants was fascinating.",
 			  	goal: "exam_2_3"
 		  	}
 		]
